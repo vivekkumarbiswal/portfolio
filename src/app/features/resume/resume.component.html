@@ -1,104 +1,293 @@
-<section class="resume-wrapper">
-  <div class="resume-paper animate-fade-up">
-    
-    <!-- Header Section -->
-    <div class="res-header-row">
-      <header class="res-header">
-        <h1 class="res-name">{{ data.personal.name }}</h1>
-        <div class="res-contact-info">
-          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="res-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> {{ data.personal.phone }}</span>
-          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="res-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> {{ data.personal.email }}</span>
-          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="res-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> <a [href]="data.personal.linkedin" target="_blank">LinkedIn</a></span>
-          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="res-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> <a [href]="data.personal.github" target="_blank">GitHub</a></span>
-        </div>
-      </header>
-      <div class="res-actions">
-        <a href="/assets/resume/resume.pdf" download class="res-download-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download PDF
+<div class="resume-wrapper">
+  <div class="scroll-progress-container no-print">
+    <div class="scroll-progress-bar" [style.width.%]="scrollProgress"></div>
+  </div>
+
+
+  <!-- Resume Container -->
+  <div class="resume-container">
+    <!-- Header -->
+    <header class="resume-header">
+      <h1 class="resume-name">Vivek Kumar Biswal</h1>
+      <div class="contact-info">
+        <!-- Phone -->
+        <span class="contact-item">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.59 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l1.52-1.52a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          {{ contactInfo.phone }}
+        </span>
+
+        <!-- Email -->
+        <a class="contact-item" [href]="'mailto:' + contactInfo.email">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          {{ contactInfo.email }}
         </a>
+
+        <!-- LinkedIn -->
+        <a class="contact-item" [href]="contactInfo.linkedin" target="_blank">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn
+        </a>
+
+        <!-- GitHub -->
+        <a class="contact-item" [href]="contactInfo.github" target="_blank">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+
+        <!-- Location -->
+        <span class="contact-item">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          {{ contactInfo.location }}
+        </span>
       </div>
-    </div>
+    </header>
 
-    <hr class="res-hr" />
-
-    <!-- Summary -->
-    <section class="res-section">
-      <h2 class="res-sec-title">{{ data.personal.title }}</h2>
-      <p class="res-bio">{{ data.personal.tagline }}</p>
-      <ul class="res-list">
-        <li>Experienced in building scalable Angular applications using TypeScript and RxJS, with working knowledge of Ionic and Capacitor for hybrid mobile development.</li>
-        <li>Skilled in developing responsive, accessible, and high-performance web applications that enhance user experience and meet business requirements.</li>
-        <li>Strong experience collaborating in Agile environments, contributing across the SDLC from development to deployment.</li>
-        <li>Recognized with the Star Team Award for outstanding teamwork and successful project delivery.</li>
+    <!-- Professional Summary -->
+    <section class="resume-section" tabindex="0">
+      <h2 class="section-title">Angular Developer | Frontend Engineer</h2>
+      <p class="summary-headline">
+        Front-End Developer with 4 years of experience in designing, building,
+        and optimizing user-focused websites and applications.
+      </p>
+      <ul class="bullet-list">
+        <li>
+          Experienced in building scalable Angular applications using TypeScript
+          and RxJS, with working knowledge of Ionic and Capacitor for hybrid
+          mobile development.
+        </li>
+        <li>
+          Skilled in developing responsive, accessible, and high-performance web
+          applications that enhance user experience and meet business
+          requirements.
+        </li>
+        <li>
+          Strong experience collaborating in Agile environments, contributing
+          across the SDLC from development to deployment.
+        </li>
+        <li>
+          Recognized with the Star Team Award for outstanding teamwork and
+          successful project delivery.
+        </li>
       </ul>
     </section>
 
-    <hr class="res-hr" />
-
-    <!-- Skills -->
-    <section class="res-section">
-      <h2 class="res-sec-title">KEY COMPETENCIES</h2>
-      <div class="res-grid">
-        <div *ngFor="let group of data.skillGroups" class="res-grid-col">
-          <p><strong>{{ group.label }}:</strong> {{ getSkillNames(group) }}</p>
+    <!-- Key Competencies -->
+    <hr />
+    <section class="resume-section" tabindex="0">
+      <h2 class="section-title">Key Competencies</h2>
+      <div class="competencies-grid">
+        <div>
+          <p>
+            <span class="label">Primary Skills:</span> Angular(v2+), RxJS,
+            TypeScript, JavaScript, HTML, CSS, SCSS, Accessibility (WCAG, ARIA)
+          </p>
+          <p>
+            <span class="label">Secondary Skills:</span> Ionic, Capacitor, PWA
+          </p>
+        </div>
+        <div>
+          <p>
+            <span class="label">Version Control &amp; Tools:</span> Git (GitHub,
+            GitLab, Bitbucket), Docker
+          </p>
+          <p>
+            <span class="label">Other:</span> RESTful APIs, Agile Methodologies
+          </p>
         </div>
       </div>
     </section>
 
-    <hr class="res-hr" />
+    <!-- Professional Experience -->
+    <hr />
+    <section class="resume-section" tabindex="0">
+      <h2 class="section-title">Professional Experience</h2>
 
-    <!-- Experience -->
-    <section class="res-section">
-      <h2 class="res-sec-title">PROFESSIONAL EXPERIENCE</h2>
-      <div class="res-exp-group" *ngFor="let exp of data.experiences">
-        <div class="res-exp-top">
-          <h3 class="res-company">{{ exp.company }} — {{ exp.role }}</h3>
-        </div>
-        <div class="res-project-header">
-          <span class="res-project-name">Project: {{ exp.description }}</span>
-          <span class="res-date">{{ exp.period }}</span>
-        </div>
-        <ul class="res-list">
-          <li *ngFor="let bullet of exp.bullets">{{ bullet }}</li>
-        </ul>
-      </div>
-    </section>
+      <!-- TCS -->
+      <div class="employer-block">
+        <h3 class="employer-name">
+          Tata Consultancy Services – Front End Developer
+        </h3>
 
-    <hr class="res-hr" />
-
-    <!-- Achievements & Certs -->
-    <section class="res-section">
-      <div class="res-grid dual-section">
-        <div class="res-grid-col">
-          <h2 class="res-sec-title">ACHIEVEMENTS</h2>
-          <ul class="res-list compact">
-            <li *ngFor="let ach of data.achievements">
-              {{ ach.title }} <span *ngIf="ach.year">({{ ach.year }})</span>
+        <!-- Project 1 -->
+        <div class="project-block">
+          <div class="project-header">
+            <span class="project-name">Project: Deutsche Bank – MyBank Spain (TCS Interactive)</span>
+            <span class="project-date">Apr 2025 – Oct 2025</span>
+          </div>
+          <ul class="bullet-list">
+            <li>
+              Contributed to the rebranding of the MyBank Spain application
+              using Angular 13, Ionic, and Cordova, focusing on UI modernization
+              while implementing accessibility improvements to deliver a more
+              inclusive and user-friendly experience.
+            </li>
+            <li>
+              Developed reusable UI components reducing development time by 30%,
+              ensuring consistent design and responsive behaviour across web and
+              mobile platforms.
+            </li>
+            <li>
+              Implemented client-specific UI and accessibility changes,
+              showcasing the updated design during demos and ensuring alignment
+              with client requirements.
+            </li>
+            <li>
+              Worked closely with Product Owners and cross-functional teams in
+              an Agile environment to deliver high-quality UI features.
             </li>
           </ul>
         </div>
-        <div class="res-grid-col">
-          <h2 class="res-sec-title">CERTIFICATE</h2>
-          <ul class="res-list compact">
-            <li *ngFor="let cert of data.certificates">{{ cert.title }}</li>
+
+        <!-- Project 2 -->
+        <div class="project-block">
+          <div class="project-header">
+            <span class="project-name">Project: BFSI US East – Insurance – Offshore – TTI (Technology,
+              Transformation and Innovation)</span>
+            <span class="project-date">Nov 2024 – Mar 2025</span>
+          </div>
+          <ul class="bullet-list">
+            <li>
+              <span class="highlight">Angular Application Development:</span>
+              Led the development of a scalable web application using Angular
+              15, applying modular architecture, reusable components, and
+              performance optimization best practices.
+            </li>
+            <li>
+              <span class="highlight">PWA Implementation (AIG Client – POC):</span>
+              Successfully delivered a Proof of Concept (POC) for the AIG client
+              by integrating Progressive Web App (PWA) capabilities using
+              Angular Service Worker, enabling installability, improved load
+              performance, and optimized static asset caching.
+            </li>
+            <li>
+              <span class="highlight">Hybrid Mobile Enablement:</span>
+              Integrated Ionic Capacitor into the existing Angular PWA to
+              generate native Android and iOS builds, validating mobile
+              responsiveness and preparing the application for further native
+              feature integration by the mobile team.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-block">
+          <div class="project-header">
+            <span class="project-name">Project: Genworth Financial – CareScout</span>
+            <span class="project-date">Nov 2021 – Oct 2024</span>
+          </div>
+          <ul class="bullet-list">
+            <li>
+              <span class="highlight">End-to-End SDLC Experience:</span>
+              Contributed across requirements analysis, development, testing,
+              deployment, and production support for web and mobile applications
+              within Agile environments.
+            </li>
+            <li>
+              <span class="highlight">Frontend Development &amp; Rebranding:</span>
+              Developed and maintained Angular (11–12) applications using RxJS,
+              Angular Material, HTML5, SCSS, and Bootstrap, leading the
+              rebranding of the FIELD NURSE (Provider) Portal to enhance UI
+              consistency and user experience.
+            </li>
+            <li>
+              <span class="highlight">Application Upgrade &amp; Build Management:</span>
+              Managed web and mobile (Android &amp; iOS) builds, upgraded
+              Angular from v11 to v12, replaced deprecated libraries, and
+              migrated ngx-modal to Angular Material Dialog to improve stability
+              and maintainability.
+            </li>
           </ul>
         </div>
       </div>
     </section>
+    <hr />
 
-    <hr class="res-hr" />
+    <!-- Achievements & Certificates -->
+    <div class="two-col-grid">
+      <!-- Achievements -->
+      <section class="resume-section" tabindex="0">
+        <h2 class="section-title">Achievements</h2>
+        <ul class="bullet-list">
+          <li>Star Team Award (2022)</li>
+          <li>Received Multiple Appreciation from Client</li>
+          <li>Star Certificate (2023)</li>
+          <li>Nominated for Spot on Award (2023)</li>
+        </ul>
+      </section>
+
+      <!-- Certificates -->
+      <section class="resume-section" tabindex="0">
+        <h2 class="section-title">Certificate</h2>
+        <ul class="cert-list">
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/verify/LAC7LP47YUXY">HTML, CSS, and JavaScript for
+              Web Developers</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/verify/RK5D8FWPFL3B">Foundations of User
+              Experience (UX) Design</a>
+          </li>
+          <li>
+            <a href="https://rhtapps.redhat.com/verify?certId=170-069-710">Red Hat Certified System Administrator
+              (RHCSA)</a>
+          </li>
+          <li>
+            <a href="https://www.certmetrics.com/comptia/public/verification.aspx/">CompTIA Strata IT Fundamentals
+              Certification</a>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <!-- Education -->
-    <section class="res-section no-margin">
-      <h2 class="res-sec-title">EDUCATION</h2>
-      <div class="res-edu-item">
-        <div class="res-edu-top">
-          <h3><strong>{{ data.education[0].degree }}</strong>, {{ data.education[0].institution }}</h3>
-          <span class="res-date">{{ data.education[0].period }}</span>
-        </div>
+    <hr />
+    <section class="resume-section" tabindex="0">
+      <h2 class="section-title">Education</h2>
+      <div class="education-row">
+        <span class="edu-degree">Master of Computer Application (MCA),
+          <span class="edu-institute">BIT - CSVTU, Chhattisgarh</span></span>
+        <span class="edu-date">2018 – 2021</span>
       </div>
     </section>
-
   </div>
-</section>
+  <!-- end resume-container -->
+
+  <!-- Floating Action Buttons -->
+  <div class="action-buttons no-print">
+    <button (click)="downloadResume()" class="fab fab--primary" title="Download Resume PDF">
+      <!-- Download Icon SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <polyline points="7 10 12 15 17 10" />
+        <line x1="12" y1="15" x2="12" y2="3" />
+      </svg>
+    </button>
+    <a [href]="'mailto:' + contactInfo.email" class="fab fab--accent" title="Contact Me">
+      <!-- Email Icon SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+    </a>
+  </div>
+</div>

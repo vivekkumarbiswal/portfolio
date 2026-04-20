@@ -1,253 +1,741 @@
+// ─── Resume-scoped CSS custom properties ─────────────────────
+// Maps to the portfolio ThemeService: dark = default, body.light-mode = light.
+// The header toggle button controls body.light-mode class globally.
+
+// DARK MODE (default — matches site's dark base)
+body {
+  --color-ink: #f4f4f5;
+  --color-ink-light: #a1a1aa;
+  --color-ink-body: #d4d4d8;
+  --color-border: #3f3f46;
+  --color-link: #60a5fa;
+  --color-link-hover: #93c5fd;
+  --color-card: #18181b;      // resume card background in dark
+  --bg-wrapper: linear-gradient(135deg, #27272a 0%, #09090b 100%);
+  --color-primary-resume: #f4f4f5;
+  --color-secondary-resume: #a1a1aa;
+  --color-icon: #a1a1aa;
+}
+
+// LIGHT MODE — activated by body.light-mode (ThemeService)
+body.light-mode {
+  --color-ink: #18181b;
+  --color-ink-light: #52525b;
+  --color-ink-body: #27272a;
+  --color-border: #e4e4e7;
+  --color-link: #2563eb;
+  --color-link-hover: #1d4ed8;
+  --color-card: #ffffff;
+  --bg-wrapper: linear-gradient(135deg, #fdfbfb 0%, #eaedee 100%);
+  --color-primary-resume: #18181b;
+  --color-secondary-resume: #52525b;
+  --color-icon: #52525b;
+}
+
+// ─── SCSS Aliases ─────────────────────────────────────────────
+$color-ink: var(--color-ink);
+$color-ink-light: var(--color-ink-light);
+$color-ink-body: var(--color-ink-body);
+$color-border: var(--color-border);
+$color-primary: var(--color-primary-resume);
+$color-secondary: var(--color-secondary-resume);
+$color-link: var(--color-link);
+$color-link-hover: var(--color-link-hover);
+$color-white: var(--color-card);
+$color-icon: var(--color-icon);
+
+// ─── Typography ──────────────────────────────────────────────
+$font-family: 'Inter', system-ui, sans-serif;
+$font-header: 'Inter', system-ui, sans-serif;
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-4xl: 2.25rem;
+
+// ─── Resume Wrapper ──────────────────────────────────────────
 .resume-wrapper {
-  background-color: var(--bg-secondary);
-  min-height: 100svh;
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-  color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
-  transition: background-color 0.3s ease;
+  font-family: $font-family;
+  min-height: 100vh;
+  background: var(--bg-wrapper);
+  padding: 100px 1rem 2rem 1rem;
+  box-sizing: border-box;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+
+  @media (min-width: 640px) {
+    padding: 100px 2rem 2rem 2rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 120px 2rem 3rem 2rem;
+  }
+
+  // ── Scoped resets: override global portfolio styles (main.scss) ──
+  // main.scss sets h1–h4 { color: var(--text-primary) } and p { color: var(--text-secondary) }
+  // which bleed into the resume and cause text to appear "lighter" in light mode.
+  // These rules win via higher specificity and use the resume's own theme tokens.
+  & h1, & h2, & h3, & h4 {
+    color: $color-ink; // Falls back to --color-ink (dark in light mode, light in dark mode)
+  }
+
+  & p {
+    color: $color-ink-body; // Falls back to --color-ink-body (correct per theme)
+  }
 }
 
-.resume-paper {
-  background-color: var(--bg-paper, #ffffff);
-  width: 100%;
-  max-width: 900px;
-  padding: 60px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  color: var(--text-paper, #18181b);
-  transition: all 0.3s ease;
-  border: 1px solid var(--border-subtle);
+// ─── Resume Card ─────────────────────────────────────────────
+.resume-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: $color-white;
+  border: 1px solid $color-border;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  box-sizing: border-box;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+
+  @media (min-width: 768px) {
+    padding: 3rem;
+  }
 }
 
-:host-context(.light-mode) .resume-paper {
-  --bg-paper: #ffffff;
-  --text-paper: #18181b;
-  --border-res: #e4e4e7;
-  --muted-res: #71717a;
+// ─── Header ──────────────────────────────────────────────────
+.resume-header {
+  margin-bottom: 1.5rem;
 }
 
-:host-context(:not(.light-mode)) .resume-paper {
-  --bg-paper: #18181b;
-  --text-paper: #f4f4f5;
-  --border-res: #27272a;
-  --muted-res: #a1a1aa;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+.resume-wrapper .resume-name {
+  font-family: $font-header;
+  font-size: 2rem; // slightly larger for netflix aesthetic
+  font-weight: 700;
+  color: $color-primary;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.15;
+
+  @media (min-width: 480px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    font-size: $font-size-4xl; // 2.25rem on larger screens
+  }
 }
 
-.res-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-}
-
-.res-name {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  margin-bottom: 0.75rem;
-  color: var(--text-paper);
-}
-
-.res-contact-info {
+.contact-info {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem;
-  font-size: 0.9rem;
-  color: var(--muted-res);
-  
-  span {
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
+  align-items: center;
+  column-gap: 0.75rem;
+  row-gap: 0.4rem;
+  font-size: $font-size-sm;
+  color: $color-ink-light;
+  border-bottom: 1.5px solid $color-ink;
+  padding-bottom: 0.5rem;
+
+  @media (max-width: 480px) {
+    font-size: $font-size-xs; // slightly smaller on very small screens
+    column-gap: 0.5rem;
   }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-    
+}
+
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: $color-ink-light;
+  text-decoration: none;
+  line-height: 1;
+
+  &[href] {
+    color: $color-link;
+
     &:hover {
       text-decoration: underline;
-      color: var(--accent);
+      color: $color-link-hover;
     }
   }
-  
-  .res-icon {
-    opacity: 0.8;
-  }
 }
 
-.res-download-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1rem;
-  background: var(--text-paper);
-  color: var(--bg-paper);
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  
-  &:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
-  }
+.contact-icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  position: relative;
+  top: 0px;
+  color: $color-icon;
 }
 
-.res-hr {
-  border: none;
-  border-top: 1.5px solid var(--border-res, #e4e4e7);
-  margin: 1.5rem 0;
+// ─── Sections ────────────────────────────────────────────────
+.resume-section {
+  margin-bottom: 1.5rem;
 }
 
-.res-section {
-  margin-bottom: 2rem;
-}
-
-.no-margin {
-  margin-bottom: 0;
-}
-
-.res-sec-title {
-  font-size: 1.1rem;
+.resume-wrapper .section-title {
+  font-family: $font-header;
+  font-size: var(--font-size-section, $font-size-lg);
   font-weight: 700;
-  color: var(--text-paper);
-  margin-bottom: 1.25rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
+  color: $color-primary;
+  margin: 0 0 0.375rem 0;
+
+  &--bordered {
+    border-bottom: 2px solid $color-primary;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.625rem;
+  }
 }
 
-.res-bio {
-  font-size: 1rem;
-  line-height: 1.6;
+// ─── Summary ─────────────────────────────────────────────────
+.resume-wrapper .summary-headline {
+  font-size: $font-size-sm;
   font-weight: 600;
   font-style: italic;
-  margin-bottom: 1.25rem;
-  color: var(--text-paper);
+  margin: 0 0 0.5rem 0;
+  color: $color-ink-body;
 }
 
-.res-list {
-  padding-left: 1.15rem;
-  margin: 0;
+// ─── Bullet Lists ────────────────────────────────────────────
+.bullet-list {
   list-style: disc;
-  
+  margin: 0 0 0 1.25rem;
+  padding: 0;
+  font-size: $font-size-sm;
+  color: $color-ink-body;
+
   li {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 0.6rem;
-    color: var(--text-paper);
-    opacity: 0.9;
-    
+    margin-bottom: 0.3rem;
+    line-height: 1.55;
+
     &::marker {
-      color: var(--text-paper);
+      color: $color-secondary;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// ─── Competencies Grid ───────────────────────────────────────
+.competencies-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.375rem;
+  font-size: $font-size-sm;
+  color: $color-ink-body;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  p {
+    margin: 0 0 0.3rem 0;
+    line-height: 1.5;
+    color: $color-ink-body; // Explicitly override global p { color } from main.scss
+  }
+}
+
+.label {
+  font-weight: 700;
+}
+
+// ─── Experience ──────────────────────────────────────────────
+[data-theme="netflix"] {
+  .resume-container {
+    &:has(.resume-section:hover) {
+      .resume-section:not(:hover),
+      .resume-header,
+      hr {
+        filter: blur(0.5px);
+        opacity: 0.85;
+      }
     }
   }
 
-  &.compact li {
-    margin-bottom: 0.4rem;
+  .resume-section,
+  .resume-header,
+  hr {
+    transition:
+      filter 0.3s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      background-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .resume-section {
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: -0.75rem -0.75rem 0.75rem -0.75rem;
+    border: 1px solid transparent;
+
+    &:hover {
+      transform: scale(1.015);
+      background-color: rgba(30, 30, 30, 0.8);
+      border-color: rgba(229, 9, 20, 0.15);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+      z-index: 10;
+      position: relative;
+    }
   }
 }
 
-.res-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  
-  p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 0;
-    color: var(--text-paper);
-    opacity: 0.9;
+[data-theme="minecraft"] {
+  // Eliminate smooth modern aesthetics for pure blocky shapes
+  * {
+    border-radius: 0 !important;
   }
-  
-  strong {
-    font-weight: 700;
-    color: var(--text-paper);
+
+  // Swap out the delicate drop-shadows on the container for hard isometric block shadows
+  .resume-container {
+    border: 4px solid #422d1b !important;
+    box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.8) !important;
+    padding: 2.5rem !important; // Ensure space for the border
+  }
+
+  .resume-section {
+    transition: none !important; // 8-bit doesn't have smooth transitions!
+
+    // Give hover states a rigid "Block Selected" outline instead of blurring
+    &:hover {
+      transform: none !important;
+      background-color: rgba(0, 0, 0, 0.3) !important;
+      border: 3px dashed #51f0ea !important;
+      box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5) !important;
+      padding: 1rem;
+      margin: -1rem; // Visual box compensation
+    }
+  }
+
+  // Specific Voxel fixes for UI Buttons
+  .action-buttons .fab {
+    border: 2px solid #ffffff !important;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.8) !important;
+    transition:
+      transform 0.1s,
+      box-shadow 0.1s !important;
+
+    &:hover {
+      transform: translate(3px, 3px) !important; // physical button press
+      box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8) !important;
+    }
+  }
+
+  .theme-menu {
+    border: 4px solid #422d1b;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 0;
+
+    .theme-option {
+      border-radius: 0;
+      margin-bottom: 4px;
+      border: 2px solid transparent;
+
+      &:hover {
+        border: 2px solid #51f0ea;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  // Style bullet markers like inventory blocks
+  .bullet-list li::marker {
+    color: #51f0ea !important;
+    content: "■ ";
+    font-size: 0.8em;
   }
 }
 
-.res-exp-group {
-  margin-bottom: 2.25rem;
-  
+[data-theme="angular"] {
+  // Transform standard card containers into sleek dark-mode document wrappers
+  .resume-section {
+    background-color: #18181b;
+    border: 1px solid #27272a !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+    margin: 0 0 1.5rem 0 !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease !important;
+    cursor: pointer;
+    outline: none;
+
+    // Glowing Neon Dark-Mode Hover Response
+    &:hover {
+      transform: translateY(-2px) !important;
+      background-color: #1a1a1e !important;
+      border-color: #b24fff !important;
+      box-shadow: 0 8px 30px rgba(178, 79, 255, 0.15) !important;
+    }
+
+    // Explicit Focus Interaction
+    &:focus {
+      outline: none;
+      transform: scale(1.02) !important;
+      border-color: #b24fff !important;
+      box-shadow: 0 10px 40px rgba(178, 79, 255, 0.3) !important;
+      z-index: 100;
+      position: relative;
+    }
+  }
+
+  // The massive Angular Gradient applied strictly to the Section Headers and Resume Name
+  .section-title,
+  .resume-name {
+    background: linear-gradient(135deg, #8121ff, #ff1a8c) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important; // Absolute fallback override
+    font-weight: 800 !important; // Extra heavy to show off the purple-pink gradient
+    border-bottom: none !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  // Subheadings styled in standard brand purple
+  .employer-name,
+  .edu-degree,
+  .summary-headline {
+    color: #b24fff !important;
+  }
+
+  // Treat specific technical references as <code /> monospace blocks
+  .project-name {
+    font-family: "Roboto Mono", monospace !important;
+    color: #c084fc !important; // Lighter Lilac/Purple shift
+    font-size: 1.05em;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .edu-date,
+  .exp-date {
+    font-family: "Roboto Mono", monospace !important;
+    color: #a1a1aa !important;
+  }
+
+  // Style bullet markers to look like CLI Prompts
+  .bullet-list li::marker {
+    color: #ff3c70 !important;
+    content: "> ";
+    font-family: "Roboto Mono", monospace;
+  }
+
+  // Standardize horizontal breaks to subtle gray
+  hr {
+    display: block !important;
+    border-top: 1px solid #27272a !important;
+    opacity: 0.5;
+  }
+
+  // The master layout Button is full Angular Purple Gradient
+  .action-buttons .fab {
+    background: linear-gradient(135deg, #c084fc, #b24fff) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(178, 79, 255, 0.4) !important;
+
+    &:hover {
+      background: linear-gradient(135deg, #b24fff, #8121ff) !important;
+      transform: scale(1.05) !important;
+      box-shadow: 0 6px 25px rgba(178, 79, 255, 0.6) !important;
+    }
+  }
+
+  // Dropdown menu respects dark mode border constraints and transparency
+  .theme-menu {
+    border: 1px solid #27272a !important;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8) !important;
+  }
+}
+
+[data-theme="amazon"] {
+  // Clear the main wrapper shadow, typical of wide storefronts
+  .resume-container {
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important; // container disappears
+    padding: 1rem !important; // reset padding to let cards breathe
+  }
+
+  // Turn sections into discrete Product Listing Cards
+  .resume-section {
+    background-color: #ffffff;
+    border: 1px solid #d5d9d9 !important;
+    border-radius: 8px !important;
+    padding: 1.5rem !important;
+    margin: 0 0 1rem 0 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    transition:
+      box-shadow 0.2s ease,
+      transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1),
+      z-index 0.2s ease !important;
+    cursor: pointer;
+    outline: none;
+
+    // Very subtle lift, no zooming or cinematic glowing
+    &:hover {
+      transform: none !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+      background-color: #ffffff !important;
+      border: 1px solid #d5d9d9 !important;
+    }
+
+    // Physical explicit "click-to-focus" state
+    &:focus {
+      transform: scale(1.05) !important;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+      z-index: 100;
+      position: relative;
+      border-color: #ff9900 !important; // Pop the border with Amazon Orange on selection
+    }
+  }
+
+  // Strip natural separating elements since cards now segment content
+  hr {
+    display: none !important;
+  }
+
+  // Brand the action buttons as the universal "Add to Cart" yellow interaction
+  .action-buttons .fab {
+    background-color: #ffd814 !important;
+    color: #0f1111 !important;
+    border: 1px solid #fcd200 !important;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5) !important;
+    border-radius: 100px !important; // Perfect pill shape
+    transition:
+      background-color 0.2s,
+      transform 0.2s !important;
+
+    &:hover {
+      background-color: #f7ca00 !important;
+      transform: scale(1.02) !important;
+    }
+  }
+
+  // Style the theme speed-dial
+  .theme-menu {
+    border: 1px solid #d5d9d9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+}
+
+.employer-block {
+  margin-bottom: 0.5rem;
+}
+
+.resume-wrapper .employer-name {
+  font-size: $font-size-base;
+  font-weight: 700;
+  color: $color-ink;
+  margin: 0 0 0.75rem 0;
+}
+
+.project-block {
+  margin-bottom: 1rem;
+
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.res-exp-top {
-  margin-bottom: 0.5rem;
-}
-
-.res-company {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-paper);
-}
-
-.res-project-header {
+.project-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.85rem;
-  font-style: italic;
-  color: var(--text-paper);
-  font-weight: 600;
-  font-size: 0.95rem;
-  opacity: 0.85;
-}
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: $font-size-sm;
+  margin-bottom: 0.375rem;
 
-.res-date {
-  color: var(--muted-res);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.res-edu-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  
-  h3 {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--text-paper);
-  }
-}
-
-@media (max-width: 768px) {
-  .resume-paper {
-    padding: 40px 25px;
-  }
-  
-  .res-header-row {
+  // On very small screens, stack name above date
+  @media (max-width: 480px) {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.1rem;
   }
-  
-  .res-name {
-    font-size: 2.25rem;
+}
+
+.project-name {
+  font-weight: 700;
+  font-style: italic;
+  color: $color-ink;
+  flex: 1; // takes all available space, pushes date to the right
+  min-width: 0; // allows text to shrink/wrap without overflowing
+}
+
+.project-date {
+  color: $color-ink-light;
+  white-space: nowrap; // date never breaks across lines
+  flex-shrink: 0; // date never gets compressed — always fully visible
+  text-align: right;
+
+  @media (max-width: 480px) {
+    text-align: left; // on stacked layout, left-align the date under the name
+    font-style: italic;
   }
-  
-  .res-grid {
-    grid-template-columns: 1fr;
+}
+
+.highlight {
+  font-weight: 700;
+  font-style: italic;
+}
+
+// ─── Two Column Layout ───────────────────────────────────────
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+// ─── Certificate List ────────────────────────────────────────
+.cert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-sm;
+
+  li {
+    margin-bottom: 0.3rem;
+    line-height: 1.5;
+  }
+
+  a {
+    color: $color-link;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: $color-link-hover;
+    }
+  }
+}
+
+// ─── Education ───────────────────────────────────────────────
+.education-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: $font-size-sm;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+
+.edu-degree {
+  font-weight: 700;
+  color: $color-ink;
+}
+
+.edu-institute {
+  font-weight: 400;
+  color: $color-ink-body;
+}
+
+.edu-date {
+  color: $color-ink-light;
+  white-space: nowrap;
+}
+
+// ─── Floating Action Buttons ─────────────────────────────────
+.action-buttons {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+  z-index: 100;
+
+  @media (min-width: 640px) {
+    bottom: 2rem;
+    right: 2rem;
     gap: 1rem;
   }
-  
-  .res-project-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
+}
+
+.fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  border: none;
+  transition: all 0.15s ease;
+  text-decoration: none;
+  color: #ffffff;
+
+  @media (min-width: 640px) {
+    width: 3.25rem;
+    height: 3.25rem;
   }
-  
-  .res-edu-top {
-    flex-direction: column;
-    gap: 0.25rem;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  // Download button — uses site's accent/text color
+  &--primary {
+    background-color: var(--color-ink);
+    color: var(--color-card);
+
+    &:hover {
+      background-color: var(--color-ink-light);
+    }
+  }
+
+  // Email button — blue tint
+  &--accent {
+    background-color: var(--color-link);
+    color: #ffffff;
+
+    &:hover {
+      background-color: var(--color-link-hover);
+    }
+  }
+}
+
+// ─── Scroll Progress Bar ─────────────────────────────────
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 9999;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background-color: var(--color-primary-resume);
+  box-shadow: 0 0 8px var(--color-primary-resume);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
