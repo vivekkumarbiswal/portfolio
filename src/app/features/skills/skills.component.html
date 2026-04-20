@@ -1,0 +1,33 @@
+<section class="section skills-section" id="skills" aria-labelledby="skills-heading">
+  <div class="container">
+
+    <div appReveal>
+      <p class="section-label">Capabilities</p>
+      <h2 class="section-title" id="skills-heading">
+        Tech <span>Stack</span>
+      </h2>
+    </div>
+
+    <div class="skills-masonry">
+      <div class="skill-group-cloud" *ngFor="let group of skillGroups; let gi = index"
+           appReveal [revealDelay]="gi * 100">
+        <div class="group-info">
+          <h3 class="group-label">
+            <span class="group-icon">{{ getCategoryIcon(group.category) }}</span>
+            {{ group.label }}
+          </h3>
+        </div>
+
+        <div class="skill-cloud">
+          <div class="skill-tag" *ngFor="let skill of group.skills; let si = index"
+               [style.--delay]="si * 50 + 'ms'"
+               [attr.data-category]="group.category">
+            <span class="skill-dot"></span>
+            <span class="skill-text">{{ skill.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

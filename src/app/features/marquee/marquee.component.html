@@ -1,0 +1,10 @@
+<div class="marquee-container">
+  <div class="marquee-content">
+    <!-- Duplicate skills several times for seamless loop -->
+    <ng-container *ngFor="let i of [1, 2, 3, 4]">
+      <div class="skill-pill" *ngFor="let skill of allSkills">
+        {{ skill.name }}
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+footer {
+  border-top: 1px solid var(--border-subtle);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+
+  .mono-accent {
+    color: var(--accent);
+    opacity: 0.5;
+  }
+
+  strong {
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+
+  a {
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

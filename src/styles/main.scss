@@ -36,14 +36,21 @@
 }
 
 // ─── Reset & Base ─────────────────────────────────────────────────────────────
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -51,10 +58,11 @@ html, body {
   color: var(--text-primary);
   font-family: var(--font-sans);
   overflow-x: hidden;
-  
+
   // Hide native scrollbar
   scrollbar-width: none; // Firefox
   -ms-overflow-style: none; // IE/Edge
+
   &::-webkit-scrollbar {
     display: none; // Chrome/Safari
   }
@@ -73,7 +81,10 @@ body {
   &::before {
     content: '';
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: radial-gradient(circle at 50% -20%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
     pointer-events: none;
     z-index: -1;
@@ -99,18 +110,35 @@ body {
     .resume-paper {
       background: #ffffff;
       color: #18181b;
-      box-shadow: 0 40px 100px rgba(0,0,0,0.05);
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.05);
       border: 1px solid var(--border-subtle);
     }
-    
-    .res-section-title, .res-name, .res-exp-company, .res-edu-degree { color: #000; }
-    .res-summary, .res-bullets li, .res-edu-notes, .res-grid p { color: #3f3f46; }
-    .res-divider { border-color: #e4e4e7; }
+
+    .res-section-title,
+    .res-name,
+    .res-exp-company,
+    .res-edu-degree {
+      color: #000;
+    }
+
+    .res-summary,
+    .res-bullets li,
+    .res-edu-notes,
+    .res-grid p {
+      color: #3f3f46;
+    }
+
+    .res-divider {
+      border-color: #e4e4e7;
+    }
   }
 }
 
 // ─── Typography ───────────────────────────────────────────────────────────────
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.03em;
@@ -125,7 +153,10 @@ a {
   color: inherit;
   text-decoration: none;
   transition: var(--transition-fast);
-  &:hover { color: var(--accent); }
+
+  &:hover {
+    color: var(--accent);
+  }
 }
 
 // ─── Shared Layout ────────────────────────────────────────────────────────────
@@ -229,9 +260,18 @@ a {
 }
 
 // ─── Scrollbar ────────────────────────────────────────────────────────────────
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-primary); }
-::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
 
 // ─── Selection ────────────────────────────────────────────────────────────────
 ::selection {
@@ -241,12 +281,23 @@ a {
 
 // ─── Animations ───────────────────────────────────────────────────────────────
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animate-fade-up  { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-up {
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
 
 @for $i from 1 through 8 {
-  .delay-#{$i} { animation-delay: #{$i * 0.1}s; }
+  .delay-#{$i} {
+    animation-delay: #{$i * 0.1}s;
+  }
 }

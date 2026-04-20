@@ -1,0 +1,253 @@
+.resume-wrapper {
+  background-color: var(--bg-secondary);
+  min-height: 100svh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.resume-paper {
+  background-color: var(--bg-paper, #ffffff);
+  width: 100%;
+  max-width: 900px;
+  padding: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: var(--text-paper, #18181b);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-subtle);
+}
+
+:host-context(.light-mode) .resume-paper {
+  --bg-paper: #ffffff;
+  --text-paper: #18181b;
+  --border-res: #e4e4e7;
+  --muted-res: #71717a;
+}
+
+:host-context(:not(.light-mode)) .resume-paper {
+  --bg-paper: #18181b;
+  --text-paper: #f4f4f5;
+  --border-res: #27272a;
+  --muted-res: #a1a1aa;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.res-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.res-name {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.75rem;
+  color: var(--text-paper);
+}
+
+.res-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--muted-res);
+  
+  span {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+      color: var(--accent);
+    }
+  }
+  
+  .res-icon {
+    opacity: 0.8;
+  }
+}
+
+.res-download-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--text-paper);
+  color: var(--bg-paper);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+}
+
+.res-hr {
+  border: none;
+  border-top: 1.5px solid var(--border-res, #e4e4e7);
+  margin: 1.5rem 0;
+}
+
+.res-section {
+  margin-bottom: 2rem;
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.res-sec-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-paper);
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.res-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+  color: var(--text-paper);
+}
+
+.res-list {
+  padding-left: 1.15rem;
+  margin: 0;
+  list-style: disc;
+  
+  li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+    color: var(--text-paper);
+    opacity: 0.9;
+    
+    &::marker {
+      color: var(--text-paper);
+    }
+  }
+
+  &.compact li {
+    margin-bottom: 0.4rem;
+  }
+}
+
+.res-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-paper);
+    opacity: 0.9;
+  }
+  
+  strong {
+    font-weight: 700;
+    color: var(--text-paper);
+  }
+}
+
+.res-exp-group {
+  margin-bottom: 2.25rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.res-exp-top {
+  margin-bottom: 0.5rem;
+}
+
+.res-company {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-paper);
+}
+
+.res-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.85rem;
+  font-style: italic;
+  color: var(--text-paper);
+  font-weight: 600;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.res-date {
+  color: var(--muted-res);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.res-edu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-paper);
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-paper {
+    padding: 40px 25px;
+  }
+  
+  .res-header-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .res-name {
+    font-size: 2.25rem;
+  }
+  
+  .res-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .res-project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .res-edu-top {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

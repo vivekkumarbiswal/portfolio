@@ -1,0 +1,79 @@
+.stats-section {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.stat-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-value {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.github-stats {
+  padding: 2.5rem;
+  background: var(--bg-card);
+}
+
+.github-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  
+  h3 {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+.github-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+}
+
+.stats-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  filter: grayscale(1) invert(1); // Force matching the dark theme if they are light-themed
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    opacity: 1;
+    filter: grayscale(0) invert(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .github-content {
+    grid-template-columns: 1fr;
+  }
+}

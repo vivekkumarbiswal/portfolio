@@ -1,0 +1,42 @@
+.not-found {
+  min-height: 80svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.glitch {
+  font-size: clamp(6rem, 15vw, 12rem);
+  font-weight: 900;
+  line-height: 1;
+  position: relative;
+  color: var(--text-primary);
+  letter-spacing: -0.05em;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  
+  span {
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 0.6em;
+  }
+}
+
+.description {
+  max-width: 500px;
+  margin: 0 auto 3.5rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}

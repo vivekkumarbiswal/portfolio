@@ -19,14 +19,7 @@ import { MarqueeComponent } from '../marquee/marquee.component';
     StatsComponent,
     MarqueeComponent
   ],
-  template: `
-    <app-hero />
-    <app-marquee />
-    <app-stats />
-    <app-skills />
-    <app-timeline />
-    <app-projects-preview />
-    <app-contact />
-  `
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {}
