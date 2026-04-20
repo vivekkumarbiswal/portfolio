@@ -8,17 +8,17 @@ export const routes: Routes = [
       {
         path: '',
         loadComponent: () => import('./features/home/home.component').then(m => m.HomeComponent),
-        title: 'Home — Dev Portfolio'
+        title: 'Vivek — Software Engineer'
       },
       {
         path: 'projects',
         loadComponent: () => import('./features/projects/projects.component').then(m => m.ProjectsComponent),
-        title: 'Projects — Dev Portfolio'
+        title: 'Projects — Vivek'
       },
       {
         path: 'resume',
         loadComponent: () => import('./features/resume/resume.component').then(m => m.ResumeComponent),
-        title: 'Resume — Dev Portfolio'
+        title: 'Resume — Vivek'
       },
       {
         path: '404',
