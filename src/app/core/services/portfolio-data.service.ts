@@ -17,7 +17,7 @@ export class PortfolioDataService {
     location: 'Bangalore',
     email: 'vivekkumarbiswal@gmail.com',
     phone: '+91 8*********0',
-    linkedin: 'https://linkedin.com/in/vivekkumarbiswal',
+    linkedin: 'https://www.linkedin.com/in/vivek-kumar-biswal-a84856196/',
     github: 'https://github.com/vivekkumarbiswal',
     available: true,
   };
@@ -162,7 +162,7 @@ export class PortfolioDataService {
     return [
       { label: 'Years of Experience', value: '4+' },
       { label: 'Project Milestones', value: '12' },
-      { label: 'Angular Versions', value: 'v11-17' },
+      { label: 'Angular Versions', value: 'V(2+)' },
       { label: 'Happy Clients', value: '3+' }
     ];
   }

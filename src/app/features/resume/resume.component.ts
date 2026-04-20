@@ -34,7 +34,7 @@ export class ResumeComponent implements OnInit {
 
   downloadResume() {
     const link = document.createElement("a");
-    link.href = "VivekKumarBiswal_FrontendDeveloper_4Years_Resume.pdf";
+    link.href = "assets/resume/VivekKumarBiswal_FrontendDeveloper_4Years_Resume.pdf";
     link.download = "VivekKumarBiswal_FrontendDeveloper_4Years_Resume.pdf";
     link.click();
   }
