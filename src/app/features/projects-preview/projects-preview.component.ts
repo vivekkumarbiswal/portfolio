@@ -13,6 +13,6 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
 })
 export class ProjectsPreviewComponent {
   featured = this.data.getFeaturedProjects();
-  constructor(private data: PortfolioDataService) {}
+  constructor(private data: PortfolioDataService) { }
   formatIndex(i: number): string { return `// project_${String(i + 1).padStart(2, '0')}`; }
 }

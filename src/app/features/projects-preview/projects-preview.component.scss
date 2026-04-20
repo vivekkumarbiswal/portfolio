@@ -17,7 +17,7 @@
   text-decoration: none;
   letter-spacing: 0.05em;
   transition: gap 0.2s;
-  
+
   &:hover {
     gap: 0.7rem;
   }
@@ -62,7 +62,7 @@
   transition: color 0.2s;
   display: flex;
   align-items: center;
-  
+
   &:hover {
     color: var(--accent);
   }
@@ -121,11 +121,13 @@
     color: var(--neon-green);
     border: 1px solid rgba(0, 255, 148, 0.2);
   }
+
   &[data-status="wip"] {
     background: rgba(255, 200, 0, 0.08);
     color: #ffc800;
     border: 1px solid rgba(255, 200, 0, 0.2);
   }
+
   &[data-status="archived"] {
     background: rgba(136, 136, 170, 0.08);
     color: var(--text-muted);

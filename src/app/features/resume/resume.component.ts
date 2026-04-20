@@ -1,12 +1,5 @@
 import { CommonModule } from "@angular/common";
-import {
-  Component,
-  HostListener,
-  OnInit,
-  ViewEncapsulation,
-  inject,
-} from "@angular/core";
-import { ThemeService } from "../../core/services/theme.service";
+import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
   selector: "app-resume",
@@ -16,12 +9,8 @@ import { ThemeService } from "../../core/services/theme.service";
   styleUrl: "./resume.component.scss",
   encapsulation: ViewEncapsulation.None,
 })
-export class ResumeComponent implements OnInit {
-  themeService = inject(ThemeService);
+export class ResumeComponent {
 
-  ngOnInit() {
-    // No-op: ThemeService already handles body.light-mode class globally
-  }
 
 
   contactInfo = {
