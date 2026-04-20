@@ -25,9 +25,9 @@
   --font-mono: 'JetBrains Mono', monospace;
 
   // Spacing
-  --section-padding: clamp(6rem, 15vw, 12rem);
+  --section-padding: clamp(4rem, 10vw, 8rem);
   --container-max: 1100px;
-  --container-pad: clamp(1.5rem, 5vw, 4rem);
+  --container-pad: clamp(1rem, 5vw, 3rem);
 
   // Transitions
   --transition-fast: 0.15s ease;
@@ -41,6 +41,23 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  
+  // Hide native scrollbar
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none; // IE/Edge
+  &::-webkit-scrollbar {
+    display: none; // Chrome/Safari
+  }
 }
 
 body {

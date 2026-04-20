@@ -20,7 +20,12 @@ export const routes: Routes = [
         loadComponent: () => import('./features/resume/resume.component').then(m => m.ResumeComponent),
         title: 'Resume — Dev Portfolio'
       },
+      {
+        path: '404',
+        loadComponent: () => import('./features/not-found/not-found.component').then(m => m.NotFoundComponent),
+        title: '404 — Logic Error'
+      },
     ]
   },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '404' }
 ];

@@ -1,0 +1,1312 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "portfolio_content_flow",
+        "label": "Portfolio Content Flow",
+        "nodes": [
+          "portfolio_data_service_central_data_store",
+          "hero_component_hero_section",
+          "projects_component_project_gallery",
+          "projects_preview_component_featured_projects",
+          "skills_component_tech_stack",
+          "resume_component_resume_page"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.88,
+        "source_file": "src/app/core/services/portfolio-data.service.ts"
+      },
+      {
+        "id": "app_shell_layout",
+        "label": "App Shell Layout",
+        "nodes": [
+          "shell_component_layout_shell",
+          "header_component_sticky_navigation",
+          "footer_component_site_footer"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.92,
+        "source_file": "src/app/layout/shell/shell.component.ts"
+      },
+      {
+        "id": "home_page_section_stack",
+        "label": "Home Page Section Stack",
+        "nodes": [
+          "hero_component_hero_section",
+          "skills_component_tech_stack",
+          "projects_preview_component_featured_projects"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.98,
+        "source_file": "src/app/features/home/home.component.ts"
+      },
+      {
+        "id": "home_page_section_stack",
+        "label": "Home Page Section Stack",
+        "nodes": [
+          "hero_component_hero_section",
+          "skills_component_tech_stack",
+          "projects_preview_component_featured_projects"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.98,
+        "source_file": "src/app/features/home/home.component.ts"
+      },
+      {
+        "id": "app_shell_layout",
+        "label": "App Shell Layout",
+        "nodes": [
+          "shell_component_layout_shell",
+          "header_component_sticky_navigation",
+          "footer_component_site_footer"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.92,
+        "source_file": "src/app/layout/shell/shell.component.ts"
+      },
+      {
+        "id": "portfolio_content_flow",
+        "label": "Portfolio Content Flow",
+        "nodes": [
+          "portfolio_data_service_central_data_store",
+          "hero_component_hero_section",
+          "projects_component_project_gallery",
+          "projects_preview_component_featured_projects",
+          "skills_component_tech_stack",
+          "resume_component_resume_page"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.88,
+        "source_file": "src/app/core/services/portfolio-data.service.ts"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Main Bootstrap Application",
+      "file_type": "code",
+      "source_file": "src/main.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_bootstrap_application",
+      "community": 6,
+      "norm_label": "main bootstrap application"
+    },
+    {
+      "label": "app.routes.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/app.routes.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_app_routes_ts",
+      "community": 14,
+      "norm_label": "app.routes.ts"
+    },
+    {
+      "label": "App Root Router Outlet",
+      "file_type": "code",
+      "source_file": "src/app/app.component.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_component_router_outlet_root",
+      "community": 6,
+      "norm_label": "app root router outlet"
+    },
+    {
+      "label": "App Providers Config",
+      "file_type": "code",
+      "source_file": "src/app/app.config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_config_providers",
+      "community": 6,
+      "norm_label": "app providers config"
+    },
+    {
+      "label": "portfolio.models.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/models/portfolio.models.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_core_models_portfolio_models_ts",
+      "community": 15,
+      "norm_label": "portfolio.models.ts"
+    },
+    {
+      "label": "Theme Service",
+      "file_type": "code",
+      "source_file": "src/app/core/services/theme.service.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "theme_service_theme_mode_persistence",
+      "community": 16,
+      "norm_label": "theme service"
+    },
+    {
+      "label": "portfolio-data.service.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_core_services_portfolio_data_service_ts",
+      "community": 0,
+      "norm_label": "portfolio-data.service.ts"
+    },
+    {
+      "label": "PortfolioDataService",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
+      "source_location": "L5",
+      "id": "portfolio_data_service_portfoliodataservice",
+      "community": 0,
+      "norm_label": "portfoliodataservice"
+    },
+    {
+      "label": ".getFeaturedProjects()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
+      "source_location": "L105",
+      "id": "portfolio_data_service_portfoliodataservice_getfeaturedprojects",
+      "community": 0,
+      "norm_label": ".getfeaturedprojects()"
+    },
+    {
+      "label": ".getProjectsByCategory()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
+      "source_location": "L109",
+      "id": "portfolio_data_service_portfoliodataservice_getprojectsbycategory",
+      "community": 0,
+      "norm_label": ".getprojectsbycategory()"
+    },
+    {
+      "label": ".getProfessionalStats()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
+      "source_location": "L114",
+      "id": "portfolio_data_service_portfoliodataservice_getprofessionalstats",
+      "community": 0,
+      "norm_label": ".getprofessionalstats()"
+    },
+    {
+      "label": "Footer Component",
+      "file_type": "code",
+      "source_file": "src/app/layout/footer/footer.component.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "footer_component_site_footer",
+      "community": 17,
+      "norm_label": "footer component"
+    },
+    {
+      "label": "shell.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_layout_shell_shell_component_ts",
+      "community": 2,
+      "norm_label": "shell.component.ts"
+    },
+    {
+      "label": "ShellComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
+      "source_location": "L127",
+      "id": "shell_component_shellcomponent",
+      "community": 2,
+      "norm_label": "shellcomponent"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
+      "source_location": "L135",
+      "id": "shell_component_shellcomponent_constructor",
+      "community": 2,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".onWindowScroll()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
+      "source_location": "L144",
+      "id": "shell_component_shellcomponent_onwindowscroll",
+      "community": 2,
+      "norm_label": ".onwindowscroll()"
+    },
+    {
+      "label": ".scrollToTop()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
+      "source_location": "L152",
+      "id": "shell_component_shellcomponent_scrolltotop",
+      "community": 2,
+      "norm_label": ".scrolltotop()"
+    },
+    {
+      "label": "Header Component",
+      "file_type": "code",
+      "source_file": "src/app/layout/header/header.component.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "header_component_sticky_navigation",
+      "community": 18,
+      "norm_label": "header component"
+    },
+    {
+      "label": "home.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/home/home.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_features_home_home_component_ts",
+      "community": 10,
+      "norm_label": "home.component.ts"
+    },
+    {
+      "label": "HomeComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/home/home.component.ts",
+      "source_location": "L32",
+      "id": "home_component_homecomponent",
+      "community": 10,
+      "norm_label": "homecomponent"
+    },
+    {
+      "label": "contact.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_features_contact_contact_component_ts",
+      "community": 7,
+      "norm_label": "contact.component.ts"
+    },
+    {
+      "label": "ContactComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
+      "source_location": "L155",
+      "id": "contact_component_contactcomponent",
+      "community": 7,
+      "norm_label": "contactcomponent"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
+      "source_location": "L156",
+      "id": "contact_component_contactcomponent_constructor",
+      "community": 7,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "not-found.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/not-found/not-found.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_features_not_found_not_found_component_ts",
+      "community": 11,
+      "norm_label": "not-found.component.ts"
+    },
+    {
+      "label": "NotFoundComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/not-found/not-found.component.ts",
+      "source_location": "L69",
+      "id": "not_found_component_notfoundcomponent",
+      "community": 11,
+      "norm_label": "notfoundcomponent"
+    },
+    {
+      "label": "Projects Component",
+      "file_type": "code",
+      "source_file": "src/app/features/projects/projects.component.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "projects_component_project_gallery",
+      "community": 12,
+      "norm_label": "projects component"
+    },
+    {
+      "label": "resume.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_features_resume_resume_component_ts",
+      "community": 3,
+      "norm_label": "resume.component.ts"
+    },
+    {
+      "label": "ResumeComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L206",
+      "id": "resume_component_resumecomponent",
+      "community": 3,
+      "norm_label": "resumecomponent"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L210",
+      "id": "resume_component_resumecomponent_constructor",
+      "community": 3,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".ngOnInit()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L212",
+      "id": "resume_component_resumecomponent_ngoninit",
+      "community": 3,
+      "norm_label": ".ngoninit()"
+    },
+    {
+      "label": ".getSkillList()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L216",
+      "id": "resume_component_resumecomponent_getskilllist",
+      "community": 3,
+      "norm_label": ".getskilllist()"
+    },
+    {
+      "label": "marquee.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/marquee/marquee.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_features_marquee_marquee_component_ts",
+      "community": 8,
+      "norm_label": "marquee.component.ts"
+    },
+    {
+      "label": "MarqueeComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/marquee/marquee.component.ts",
+      "source_location": "L77",
+      "id": "marquee_component_marqueecomponent",
+      "community": 8,
+      "norm_label": "marqueecomponent"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/marquee/marquee.component.ts",
+      "source_location": "L80",
+      "id": "marquee_component_marqueecomponent_constructor",
+      "community": 8,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "Projects Preview Component",
+      "file_type": "code",
+      "source_file": "src/app/features/projects-preview/projects-preview.component.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "projects_preview_component_featured_projects",
+      "community": 12,
+      "norm_label": "projects preview component"
+    },
+    {
+      "label": "skills.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_features_skills_skills_component_ts",
+      "community": 5,
+      "norm_label": "skills.component.ts"
+    },
+    {
+      "label": "SkillsComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
+      "source_location": "L98",
+      "id": "skills_component_skillscomponent",
+      "community": 5,
+      "norm_label": "skillscomponent"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
+      "source_location": "L101",
+      "id": "skills_component_skillscomponent_constructor",
+      "community": 5,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".getCategoryIcon()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
+      "source_location": "L105",
+      "id": "skills_component_skillscomponent_getcategoryicon",
+      "community": 5,
+      "norm_label": ".getcategoryicon()"
+    },
+    {
+      "label": "hero.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_features_hero_hero_component_ts",
+      "community": 4,
+      "norm_label": "hero.component.ts"
+    },
+    {
+      "label": "HeroComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L118",
+      "id": "hero_component_herocomponent",
+      "community": 4,
+      "norm_label": "herocomponent"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L128",
+      "id": "hero_component_herocomponent_constructor",
+      "community": 4,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".ngOnInit()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L132",
+      "id": "hero_component_herocomponent_ngoninit",
+      "community": 4,
+      "norm_label": ".ngoninit()"
+    },
+    {
+      "label": ".type()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L136",
+      "id": "hero_component_herocomponent_type",
+      "community": 4,
+      "norm_label": ".type()"
+    },
+    {
+      "label": "timeline.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/timeline/timeline.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_features_timeline_timeline_component_ts",
+      "community": 9,
+      "norm_label": "timeline.component.ts"
+    },
+    {
+      "label": "TimelineComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/timeline/timeline.component.ts",
+      "source_location": "L129",
+      "id": "timeline_component_timelinecomponent",
+      "community": 9,
+      "norm_label": "timelinecomponent"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/timeline/timeline.component.ts",
+      "source_location": "L130",
+      "id": "timeline_component_timelinecomponent_constructor",
+      "community": 9,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "stats.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/stats/stats.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_features_stats_stats_component_ts",
+      "community": 0,
+      "norm_label": "stats.component.ts"
+    },
+    {
+      "label": "StatsComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/stats/stats.component.ts",
+      "source_location": "L102",
+      "id": "stats_component_statscomponent",
+      "community": 0,
+      "norm_label": "statscomponent"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/stats/stats.component.ts",
+      "source_location": "L107",
+      "id": "stats_component_statscomponent_constructor",
+      "community": 0,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "Reveal Directive",
+      "file_type": "code",
+      "source_file": "src/app/shared/directives/reveal.directive.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "reveal_directive_scroll_reveal",
+      "community": 19,
+      "norm_label": "reveal directive"
+    },
+    {
+      "label": "Production Environment Config",
+      "file_type": "code",
+      "source_file": "src/environments/environment.prod.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "environment_prod_ts_public_config",
+      "community": 13,
+      "norm_label": "production environment config"
+    },
+    {
+      "label": "Environment Config",
+      "file_type": "code",
+      "source_file": "src/environments/environment.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "environment_ts_public_config",
+      "community": 13,
+      "norm_label": "environment config"
+    },
+    {
+      "label": "README Overview",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "readme overview",
+      "id": "readme_overview"
+    },
+    {
+      "label": "Personalisation Checklist",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "personalisation checklist",
+      "id": "readme_personalisation_checklist"
+    },
+    {
+      "label": "Security Note",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "security note",
+      "id": "readme_security_note"
+    },
+    {
+      "label": "Scalability Note",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "scalability note",
+      "id": "readme_scalability_note"
+    },
+    {
+      "label": "Resume Placeholder PDF",
+      "file_type": "document",
+      "source_file": "src/assets/resume/resume.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 20,
+      "norm_label": "resume placeholder pdf",
+      "id": "resume_pdf_placeholder"
+    },
+    {
+      "label": "Project Placeholder SVG",
+      "file_type": "image",
+      "source_file": "src/assets/images/project-placeholder.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 21,
+      "norm_label": "project placeholder svg",
+      "id": "project_placeholder_svg_art"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "agents.md",
+      "id": "agents_md"
+    },
+    {
+      "label": "Graph Report",
+      "file_type": "document",
+      "source_file": "graphify-out/GRAPH_REPORT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "graph report",
+      "id": "graph_report_md"
+    },
+    {
+      "label": "Graphify Extraction Instructions",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "graphify extraction instructions",
+      "id": "graphify_instruction"
+    }
+  ],
+  "links": [
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_bootstrap_application",
+      "_tgt": "app_component_router_outlet_root",
+      "source": "main_bootstrap_application",
+      "target": "app_component_router_outlet_root"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "main_bootstrap_application",
+      "_tgt": "app_config_providers",
+      "source": "main_bootstrap_application",
+      "target": "app_config_providers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_core_services_portfolio_data_service_ts",
+      "_tgt": "portfolio_data_service_portfoliodataservice",
+      "source": "users_vivek_developer_angular_portfolio_src_app_core_services_portfolio_data_service_ts",
+      "target": "portfolio_data_service_portfoliodataservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_src": "portfolio_data_service_portfoliodataservice",
+      "_tgt": "portfolio_data_service_portfoliodataservice_getfeaturedprojects",
+      "source": "portfolio_data_service_portfoliodataservice",
+      "target": "portfolio_data_service_portfoliodataservice_getfeaturedprojects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_src": "portfolio_data_service_portfoliodataservice",
+      "_tgt": "portfolio_data_service_portfoliodataservice_getprojectsbycategory",
+      "source": "portfolio_data_service_portfoliodataservice",
+      "target": "portfolio_data_service_portfoliodataservice_getprojectsbycategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_src": "portfolio_data_service_portfoliodataservice",
+      "_tgt": "portfolio_data_service_portfoliodataservice_getprofessionalstats",
+      "source": "portfolio_data_service_portfoliodataservice",
+      "target": "portfolio_data_service_portfoliodataservice_getprofessionalstats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/stats/stats.component.ts",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_src": "stats_component_statscomponent_constructor",
+      "_tgt": "portfolio_data_service_portfoliodataservice_getprofessionalstats",
+      "source": "portfolio_data_service_portfoliodataservice_getprofessionalstats",
+      "target": "stats_component_statscomponent_constructor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_layout_shell_shell_component_ts",
+      "_tgt": "shell_component_shellcomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_layout_shell_shell_component_ts",
+      "target": "shell_component_shellcomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_src": "shell_component_shellcomponent",
+      "_tgt": "shell_component_shellcomponent_constructor",
+      "source": "shell_component_shellcomponent",
+      "target": "shell_component_shellcomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_src": "shell_component_shellcomponent",
+      "_tgt": "shell_component_shellcomponent_onwindowscroll",
+      "source": "shell_component_shellcomponent",
+      "target": "shell_component_shellcomponent_onwindowscroll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_src": "shell_component_shellcomponent",
+      "_tgt": "shell_component_shellcomponent_scrolltotop",
+      "source": "shell_component_shellcomponent",
+      "target": "shell_component_shellcomponent_scrolltotop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/home/home.component.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_features_home_home_component_ts",
+      "_tgt": "home_component_homecomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_features_home_home_component_ts",
+      "target": "home_component_homecomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_features_contact_contact_component_ts",
+      "_tgt": "contact_component_contactcomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_features_contact_contact_component_ts",
+      "target": "contact_component_contactcomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
+      "source_location": "L156",
+      "weight": 1.0,
+      "_src": "contact_component_contactcomponent",
+      "_tgt": "contact_component_contactcomponent_constructor",
+      "source": "contact_component_contactcomponent",
+      "target": "contact_component_contactcomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/not-found/not-found.component.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_features_not_found_not_found_component_ts",
+      "_tgt": "not_found_component_notfoundcomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_features_not_found_not_found_component_ts",
+      "target": "not_found_component_notfoundcomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify-out/graph.html",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "projects_component_project_gallery",
+      "_tgt": "projects_preview_component_featured_projects",
+      "source": "projects_component_project_gallery",
+      "target": "projects_preview_component_featured_projects"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L206",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_features_resume_resume_component_ts",
+      "_tgt": "resume_component_resumecomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_features_resume_resume_component_ts",
+      "target": "resume_component_resumecomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L210",
+      "weight": 1.0,
+      "_src": "resume_component_resumecomponent",
+      "_tgt": "resume_component_resumecomponent_constructor",
+      "source": "resume_component_resumecomponent",
+      "target": "resume_component_resumecomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L212",
+      "weight": 1.0,
+      "_src": "resume_component_resumecomponent",
+      "_tgt": "resume_component_resumecomponent_ngoninit",
+      "source": "resume_component_resumecomponent",
+      "target": "resume_component_resumecomponent_ngoninit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L216",
+      "weight": 1.0,
+      "_src": "resume_component_resumecomponent",
+      "_tgt": "resume_component_resumecomponent_getskilllist",
+      "source": "resume_component_resumecomponent",
+      "target": "resume_component_resumecomponent_getskilllist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/marquee/marquee.component.ts",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_features_marquee_marquee_component_ts",
+      "_tgt": "marquee_component_marqueecomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_features_marquee_marquee_component_ts",
+      "target": "marquee_component_marqueecomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/marquee/marquee.component.ts",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_src": "marquee_component_marqueecomponent",
+      "_tgt": "marquee_component_marqueecomponent_constructor",
+      "source": "marquee_component_marqueecomponent",
+      "target": "marquee_component_marqueecomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_features_skills_skills_component_ts",
+      "_tgt": "skills_component_skillscomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_features_skills_skills_component_ts",
+      "target": "skills_component_skillscomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_src": "skills_component_skillscomponent",
+      "_tgt": "skills_component_skillscomponent_constructor",
+      "source": "skills_component_skillscomponent",
+      "target": "skills_component_skillscomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_src": "skills_component_skillscomponent",
+      "_tgt": "skills_component_skillscomponent_getcategoryicon",
+      "source": "skills_component_skillscomponent",
+      "target": "skills_component_skillscomponent_getcategoryicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_features_hero_hero_component_ts",
+      "_tgt": "hero_component_herocomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_features_hero_hero_component_ts",
+      "target": "hero_component_herocomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_src": "hero_component_herocomponent",
+      "_tgt": "hero_component_herocomponent_constructor",
+      "source": "hero_component_herocomponent",
+      "target": "hero_component_herocomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_src": "hero_component_herocomponent",
+      "_tgt": "hero_component_herocomponent_ngoninit",
+      "source": "hero_component_herocomponent",
+      "target": "hero_component_herocomponent_ngoninit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L136",
+      "weight": 1.0,
+      "_src": "hero_component_herocomponent",
+      "_tgt": "hero_component_herocomponent_type",
+      "source": "hero_component_herocomponent",
+      "target": "hero_component_herocomponent_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_src": "hero_component_herocomponent_ngoninit",
+      "_tgt": "hero_component_herocomponent_type",
+      "source": "hero_component_herocomponent_ngoninit",
+      "target": "hero_component_herocomponent_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/timeline/timeline.component.ts",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_features_timeline_timeline_component_ts",
+      "_tgt": "timeline_component_timelinecomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_features_timeline_timeline_component_ts",
+      "target": "timeline_component_timelinecomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/timeline/timeline.component.ts",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_src": "timeline_component_timelinecomponent",
+      "_tgt": "timeline_component_timelinecomponent_constructor",
+      "source": "timeline_component_timelinecomponent",
+      "target": "timeline_component_timelinecomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/stats/stats.component.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_features_stats_stats_component_ts",
+      "_tgt": "stats_component_statscomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_features_stats_stats_component_ts",
+      "target": "stats_component_statscomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/stats/stats.component.ts",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_src": "stats_component_statscomponent",
+      "_tgt": "stats_component_statscomponent_constructor",
+      "source": "stats_component_statscomponent",
+      "target": "stats_component_statscomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify-out/graph.html",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "environment_prod_ts_public_config",
+      "_tgt": "environment_ts_public_config",
+      "source": "environment_prod_ts_public_config",
+      "target": "environment_ts_public_config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/GRAPH_REPORT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_overview",
+      "_tgt": "graph_report_md",
+      "source": "readme_overview",
+      "target": "graph_report_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/GRAPH_REPORT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_personalisation_checklist",
+      "_tgt": "graph_report_md",
+      "source": "readme_personalisation_checklist",
+      "target": "graph_report_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/GRAPH_REPORT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_security_note",
+      "_tgt": "graph_report_md",
+      "source": "readme_security_note",
+      "target": "graph_report_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/GRAPH_REPORT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_scalability_note",
+      "_tgt": "graph_report_md",
+      "source": "readme_scalability_note",
+      "target": "graph_report_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "agents_md",
+      "_tgt": "graph_report_md",
+      "source": "agents_md",
+      "target": "graph_report_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "agents_md",
+      "_tgt": "graphify_instruction",
+      "source": "agents_md",
+      "target": "graphify_instruction"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "portfolio_content_flow",
+      "label": "Portfolio Content Flow",
+      "nodes": [
+        "portfolio_data_service_central_data_store",
+        "hero_component_hero_section",
+        "projects_component_project_gallery",
+        "projects_preview_component_featured_projects",
+        "skills_component_tech_stack",
+        "resume_component_resume_page"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "src/app/core/services/portfolio-data.service.ts"
+    },
+    {
+      "id": "app_shell_layout",
+      "label": "App Shell Layout",
+      "nodes": [
+        "shell_component_layout_shell",
+        "header_component_sticky_navigation",
+        "footer_component_site_footer"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.92,
+      "source_file": "src/app/layout/shell/shell.component.ts"
+    },
+    {
+      "id": "home_page_section_stack",
+      "label": "Home Page Section Stack",
+      "nodes": [
+        "hero_component_hero_section",
+        "skills_component_tech_stack",
+        "projects_preview_component_featured_projects"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.98,
+      "source_file": "src/app/features/home/home.component.ts"
+    },
+    {
+      "id": "home_page_section_stack",
+      "label": "Home Page Section Stack",
+      "nodes": [
+        "hero_component_hero_section",
+        "skills_component_tech_stack",
+        "projects_preview_component_featured_projects"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.98,
+      "source_file": "src/app/features/home/home.component.ts"
+    },
+    {
+      "id": "app_shell_layout",
+      "label": "App Shell Layout",
+      "nodes": [
+        "shell_component_layout_shell",
+        "header_component_sticky_navigation",
+        "footer_component_site_footer"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.92,
+      "source_file": "src/app/layout/shell/shell.component.ts"
+    },
+    {
+      "id": "portfolio_content_flow",
+      "label": "Portfolio Content Flow",
+      "nodes": [
+        "portfolio_data_service_central_data_store",
+        "hero_component_hero_section",
+        "projects_component_project_gallery",
+        "projects_preview_component_featured_projects",
+        "skills_component_tech_stack",
+        "resume_component_resume_page"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "src/app/core/services/portfolio-data.service.ts"
+    }
+  ]
+}

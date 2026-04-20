@@ -24,11 +24,7 @@ import { ThemeService } from '../../core/services/theme.service';
                 {{ link.label }}
               </a>
             </li>
-            <li>
-              <a href="/assets/resume/resume.pdf" target="_blank" class="nav-cta" download>
-                Resume
-              </a>
-            </li>
+
           </ul>
 
           <button class="theme-toggle-btn" (click)="themeService.toggleTheme()" [title]="themeService.isDarkMode() ? 'Switch to Light Mode' : 'Switch to Dark Mode'">

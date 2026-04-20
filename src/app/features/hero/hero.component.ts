@@ -17,9 +17,11 @@ import { PortfolioDataService } from '../../core/services/portfolio-data.service
             {{ data.personal.name }}<span>.</span>
           </h1>
 
-          <p class="hero-role animate-fade-up delay-3">
-            {{ currentRole() }}
-          </p>
+          <div class="hero-role-container animate-fade-up delay-3">
+            <p class="hero-role">
+              {{ typedRole() }}
+            </p>
+          </div>
 
           <p class="hero-tagline animate-fade-up delay-4">
             {{ data.personal.tagline }}
@@ -46,7 +48,7 @@ import { PortfolioDataService } from '../../core/services/portfolio-data.service
       align-items: center;
       position: relative;
       background: var(--bg-primary);
-      padding-top: 100px;
+      padding-top: 60px;
     }
 
     .hero-inner {
@@ -61,7 +63,7 @@ import { PortfolioDataService } from '../../core/services/portfolio-data.service
       font-family: var(--font-mono);
       font-size: 1rem;
       color: var(--text-secondary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.75rem;
       letter-spacing: -0.02em;
     }
 
@@ -69,18 +71,25 @@ import { PortfolioDataService } from '../../core/services/portfolio-data.service
       font-size: clamp(3.5rem, 12vw, 8.5rem);
       font-weight: 800;
       line-height: 0.9;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       letter-spacing: -0.05em;
       
       span { color: var(--text-muted); opacity: 0.6; }
+    }
+
+    .hero-role-container {
+      margin-bottom: 1rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
     }
 
     .hero-role {
       font-size: clamp(1.25rem, 4vw, 2.5rem);
       font-weight: 600;
       color: var(--text-secondary);
-      margin-bottom: 1.5rem;
       letter-spacing: -0.03em;
+      margin: 0;
     }
 
     .hero-tagline {
@@ -88,7 +97,7 @@ import { PortfolioDataService } from '../../core/services/portfolio-data.service
       color: var(--text-secondary);
       max-width: 600px;
       line-height: 1.6;
-      margin-bottom: 3.5rem;
+      margin-bottom: 2.5rem;
       opacity: 0.8;
     }
 
@@ -107,16 +116,45 @@ import { PortfolioDataService } from '../../core/services/portfolio-data.service
   `]
 })
 export class HeroComponent implements OnInit {
-  currentRole = signal('Software Developer');
-  private roles = ['Angular Developer', 'Frontend Engineer', 'UI/UX Enthusiast'];
+  typedRole = signal('');
+  private roles: string[] = [];
   private roleIndex = 0;
+  private charIndex = 0;
+  private isDeleting = false;
+  private typingSpeed = 60;
+  private erasingSpeed = 30;
+  private pauseDuration = 2000;
 
-  constructor(public data: PortfolioDataService) {}
+  constructor(public data: PortfolioDataService) {
+    this.roles = this.data.personal.roles;
+  }
 
   ngOnInit(): void {
-    setInterval(() => {
+    this.type();
+  }
+
+  private type(): void {
+    const currentRole = this.roles[this.roleIndex];
+
+    if (this.isDeleting) {
+      this.typedRole.set(currentRole.substring(0, this.charIndex - 1));
+      this.charIndex--;
+    } else {
+      this.typedRole.set(currentRole.substring(0, this.charIndex + 1));
+      this.charIndex++;
+    }
+
+    let delta = this.isDeleting ? this.erasingSpeed : this.typingSpeed;
+
+    if (!this.isDeleting && this.charIndex === currentRole.length) {
+      this.isDeleting = true;
+      delta = this.pauseDuration;
+    } else if (this.isDeleting && this.charIndex === 0) {
+      this.isDeleting = false;
       this.roleIndex = (this.roleIndex + 1) % this.roles.length;
-      this.currentRole.set(this.roles[this.roleIndex]);
-    }, 3000);
+      delta = 500;
+    }
+
+    setTimeout(() => this.type(), delta);
   }
 }

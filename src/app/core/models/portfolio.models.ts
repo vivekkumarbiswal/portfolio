@@ -24,7 +24,7 @@ export interface Skill {
   icon?: string;
 }
 
-export type SkillCategory = 'frontend' | 'backend' | 'devops' | 'tools' | 'ai';
+export type SkillCategory = 'frontend' | 'backend' | 'devops' | 'tools' | 'ai' | 'primary' | 'secondary';
 
 export interface SkillGroup {
   category: SkillCategory;
@@ -47,6 +47,7 @@ export interface AiMessage {
 export interface PersonalInfo {
   name: string;
   title: string;
+  roles: string[];
   tagline: string;
   bio: string;
   location: string;
@@ -55,4 +56,30 @@ export interface PersonalInfo {
   linkedin: string;
   github: string;
   available: boolean;
+}
+
+export interface Experience {
+  company: string;
+  role: string;
+  period: string;
+  description: string;
+  bullets?: string[];
+  skills: string[];
+  current?: boolean;
+}
+
+export interface Achievement {
+  title: string;
+  year: string;
+}
+
+export interface Certificate {
+  title: string;
+  url: string;
+}
+
+export interface Education {
+  degree: string;
+  institution: string;
+  period: string;
 }
