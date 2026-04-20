@@ -18,19 +18,11 @@ import { ThemeService } from "../../core/services/theme.service";
 })
 export class ResumeComponent implements OnInit {
   themeService = inject(ThemeService);
-  scrollProgress = 0;
 
   ngOnInit() {
     // No-op: ThemeService already handles body.light-mode class globally
   }
 
-  @HostListener("window:scroll")
-  onScroll() {
-    const totalHeight =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    this.scrollProgress = (window.scrollY / totalHeight) * 100;
-  }
 
   contactInfo = {
     phone: "+91 8********0",
