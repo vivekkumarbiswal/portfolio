@@ -1,12 +1,12 @@
 # Graph Report - /Users/vivek/Developer/Angular/portfolio  (2026-04-20)
 
 ## Corpus Check
-- 24 files · ~10,979 words
+- 24 files · ~11,695 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 66 nodes · 44 edges · 23 communities detected
-- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
+- 67 nodes · 45 edges · 23 communities detected
+- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -39,12 +39,12 @@
 2. `PortfolioDataService` - 4 edges
 3. `HeroComponent` - 4 edges
 4. `ShellComponent` - 3 edges
-5. `ProjectsPreviewComponent` - 3 edges
-6. `Main Bootstrap Application` - 2 edges
-7. `HeaderComponent` - 2 edges
-8. `ContactComponent` - 2 edges
-9. `ProjectsComponent` - 2 edges
-10. `ResumeComponent` - 2 edges
+5. `ResumeComponent` - 3 edges
+6. `ProjectsPreviewComponent` - 3 edges
+7. `Main Bootstrap Application` - 2 edges
+8. `HeaderComponent` - 2 edges
+9. `ContactComponent` - 2 edges
+10. `ProjectsComponent` - 2 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `README Overview` --references--> `Graph Report`  [EXTRACTED]
@@ -86,27 +86,27 @@ Nodes (1): ShellComponent
 
 ### Community 4 - "Community 4"
 Cohesion: 0.5
-Nodes (1): ProjectsPreviewComponent
+Nodes (1): ResumeComponent
 
 ### Community 5 - "Community 5"
-Cohesion: 0.67
-Nodes (3): App Root Router Outlet, App Providers Config, Main Bootstrap Application
+Cohesion: 0.5
+Nodes (1): ProjectsPreviewComponent
 
 ### Community 6 - "Community 6"
 Cohesion: 0.67
-Nodes (1): HeaderComponent
+Nodes (3): App Root Router Outlet, App Providers Config, Main Bootstrap Application
 
 ### Community 7 - "Community 7"
 Cohesion: 0.67
-Nodes (1): ContactComponent
+Nodes (1): HeaderComponent
 
 ### Community 8 - "Community 8"
 Cohesion: 0.67
-Nodes (1): ProjectsComponent
+Nodes (1): ContactComponent
 
 ### Community 9 - "Community 9"
 Cohesion: 0.67
-Nodes (1): ResumeComponent
+Nodes (1): ProjectsComponent
 
 ### Community 10 - "Community 10"
 Cohesion: 0.67

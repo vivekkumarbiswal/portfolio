@@ -15,10 +15,18 @@ export class StatsComponent {
   githubStatsUrl: string;
   githubLanguagesUrl: string;
 
+  private readonly ghUser = 'vivekkumarbiswal';
+  private readonly theme = 'omni';
+  private readonly bgColor = '00000000';
+  private readonly titleColor = '7f8c8d';
+  private readonly textColor = 'a1a1aa';
+  private readonly iconColor = 'a1a1aa';
+
   constructor(private data: PortfolioDataService) {
     this.stats = this.data.getProfessionalStats();
-    const ghUser = 'vivekkumarbiswal';
-    this.githubStatsUrl = `https://github-readme-stats.vercel.app/api?username=${ghUser}&show_icons=true&theme=omni&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=a1a1aa&icon_color=ffffff`;
-    this.githubLanguagesUrl = `https://github-readme-stats.vercel.app/api/top-langs/?username=${ghUser}&layout=compact&theme=omni&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=a1a1aa`;
+
+    this.githubStatsUrl = `https://github-readme-stats.vercel.app/api?username=${this.ghUser}&show_icons=true&theme=${this.theme}&hide_border=true&bg_color=${this.bgColor}&title_color=${this.titleColor}&text_color=${this.textColor}&icon_color=${this.iconColor}`;
+
+    this.githubLanguagesUrl = `https://github-readme-stats.vercel.app/api/top-langs/?username=${this.ghUser}&layout=compact&theme=${this.theme}&hide_border=true&bg_color=${this.bgColor}&title_color=${this.titleColor}&text_color=${this.textColor}`;
   }
 }

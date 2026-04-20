@@ -44,7 +44,7 @@
   gap: 1rem;
   margin-bottom: 2rem;
   color: var(--accent);
-  
+
   h3 {
     color: var(--text-primary);
     font-size: 1.25rem;
@@ -65,7 +65,7 @@
   filter: grayscale(1) invert(1); // Force matching the dark theme if they are light-themed
   opacity: 0.8;
   transition: all 0.3s ease;
-  
+
   &:hover {
     opacity: 1;
     filter: grayscale(0) invert(0);
