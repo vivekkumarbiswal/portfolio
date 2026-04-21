@@ -100,7 +100,7 @@
       "author": null,
       "contributor": null,
       "id": "main_bootstrap_application",
-      "community": 6,
+      "community": 8,
       "norm_label": "main bootstrap application"
     },
     {
@@ -122,7 +122,7 @@
       "author": null,
       "contributor": null,
       "id": "app_component_router_outlet_root",
-      "community": 6,
+      "community": 8,
       "norm_label": "app root router outlet"
     },
     {
@@ -135,7 +135,7 @@
       "author": null,
       "contributor": null,
       "id": "app_config_providers",
-      "community": 6,
+      "community": 8,
       "norm_label": "app providers config"
     },
     {
@@ -161,12 +161,66 @@
       "norm_label": "theme service"
     },
     {
+      "label": "lead-gate.service.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_core_services_lead_gate_service_ts",
+      "community": 0,
+      "norm_label": "lead-gate.service.ts"
+    },
+    {
+      "label": "LeadGateService",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L6",
+      "id": "lead_gate_service_leadgateservice",
+      "community": 0,
+      "norm_label": "leadgateservice"
+    },
+    {
+      "label": ".isUnlocked()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L12",
+      "id": "lead_gate_service_leadgateservice_isunlocked",
+      "community": 0,
+      "norm_label": ".isunlocked()"
+    },
+    {
+      "label": ".unlock()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L16",
+      "id": "lead_gate_service_leadgateservice_unlock",
+      "community": 0,
+      "norm_label": ".unlock()"
+    },
+    {
+      "label": ".getInitialState()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L21",
+      "id": "lead_gate_service_leadgateservice_getinitialstate",
+      "community": 0,
+      "norm_label": ".getinitialstate()"
+    },
+    {
+      "label": ".submitLead()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L26",
+      "id": "lead_gate_service_leadgateservice_submitlead",
+      "community": 0,
+      "norm_label": ".submitlead()"
+    },
+    {
       "label": "portfolio-data.service.ts",
       "file_type": "code",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_core_services_portfolio_data_service_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "portfolio-data.service.ts"
     },
     {
@@ -175,34 +229,34 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
       "source_location": "L5",
       "id": "portfolio_data_service_portfoliodataservice",
-      "community": 0,
+      "community": 1,
       "norm_label": "portfoliodataservice"
     },
     {
       "label": ".getFeaturedProjects()",
       "file_type": "code",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
-      "source_location": "L152",
+      "source_location": "L146",
       "id": "portfolio_data_service_portfoliodataservice_getfeaturedprojects",
-      "community": 0,
+      "community": 1,
       "norm_label": ".getfeaturedprojects()"
     },
     {
       "label": ".getProjectsByCategory()",
       "file_type": "code",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
-      "source_location": "L156",
+      "source_location": "L150",
       "id": "portfolio_data_service_portfoliodataservice_getprojectsbycategory",
-      "community": 0,
+      "community": 1,
       "norm_label": ".getprojectsbycategory()"
     },
     {
       "label": ".getProfessionalStats()",
       "file_type": "code",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
-      "source_location": "L161",
+      "source_location": "L155",
       "id": "portfolio_data_service_portfoliodataservice_getprofessionalstats",
-      "community": 0,
+      "community": 1,
       "norm_label": ".getprofessionalstats()"
     },
     {
@@ -211,7 +265,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/footer/footer.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_layout_footer_footer_component_ts",
-      "community": 13,
+      "community": 14,
       "norm_label": "footer.component.ts"
     },
     {
@@ -220,7 +274,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/footer/footer.component.ts",
       "source_location": "L10",
       "id": "footer_component_footercomponent",
-      "community": 13,
+      "community": 14,
       "norm_label": "footercomponent"
     },
     {
@@ -229,7 +283,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_layout_shell_shell_component_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "shell.component.ts"
     },
     {
@@ -238,7 +292,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
       "source_location": "L17",
       "id": "shell_component_shellcomponent",
-      "community": 3,
+      "community": 4,
       "norm_label": "shellcomponent"
     },
     {
@@ -247,7 +301,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
       "source_location": "L24",
       "id": "shell_component_shellcomponent_constructor",
-      "community": 3,
+      "community": 4,
       "norm_label": ".constructor()"
     },
     {
@@ -256,7 +310,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/shell/shell.component.ts",
       "source_location": "L33",
       "id": "shell_component_shellcomponent_onwindowscroll",
-      "community": 3,
+      "community": 4,
       "norm_label": ".onwindowscroll()"
     },
     {
@@ -265,7 +319,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/header/header.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_layout_header_header_component_ts",
-      "community": 7,
+      "community": 9,
       "norm_label": "header.component.ts"
     },
     {
@@ -274,7 +328,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/header/header.component.ts",
       "source_location": "L13",
       "id": "header_component_headercomponent",
-      "community": 7,
+      "community": 9,
       "norm_label": "headercomponent"
     },
     {
@@ -283,7 +337,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/layout/header/header.component.ts",
       "source_location": "L25",
       "id": "header_component_headercomponent_onscroll",
-      "community": 7,
+      "community": 9,
       "norm_label": ".onscroll()"
     },
     {
@@ -292,7 +346,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/home/home.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_home_home_component_ts",
-      "community": 14,
+      "community": 15,
       "norm_label": "home.component.ts"
     },
     {
@@ -301,7 +355,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/home/home.component.ts",
       "source_location": "L25",
       "id": "home_component_homecomponent",
-      "community": 14,
+      "community": 15,
       "norm_label": "homecomponent"
     },
     {
@@ -310,26 +364,35 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_contact_contact_component_ts",
-      "community": 8,
+      "community": 5,
       "norm_label": "contact.component.ts"
     },
     {
       "label": "ContactComponent",
       "file_type": "code",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
-      "source_location": "L13",
+      "source_location": "L15",
       "id": "contact_component_contactcomponent",
-      "community": 8,
+      "community": 5,
       "norm_label": "contactcomponent"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
-      "source_location": "L14",
+      "source_location": "L20",
       "id": "contact_component_contactcomponent_constructor",
-      "community": 8,
+      "community": 5,
       "norm_label": ".constructor()"
+    },
+    {
+      "label": ".toggleLeadForm()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
+      "source_location": "L22",
+      "id": "contact_component_contactcomponent_toggleleadform",
+      "community": 5,
+      "norm_label": ".toggleleadform()"
     },
     {
       "label": "not-found.component.ts",
@@ -337,7 +400,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/not-found/not-found.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_not_found_not_found_component_ts",
-      "community": 15,
+      "community": 16,
       "norm_label": "not-found.component.ts"
     },
     {
@@ -346,7 +409,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/not-found/not-found.component.ts",
       "source_location": "L12",
       "id": "not_found_component_notfoundcomponent",
-      "community": 15,
+      "community": 16,
       "norm_label": "notfoundcomponent"
     },
     {
@@ -355,7 +418,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/projects/projects.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_projects_projects_component_ts",
-      "community": 9,
+      "community": 10,
       "norm_label": "projects.component.ts"
     },
     {
@@ -364,7 +427,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/projects/projects.component.ts",
       "source_location": "L12",
       "id": "projects_component_projectscomponent",
-      "community": 9,
+      "community": 10,
       "norm_label": "projectscomponent"
     },
     {
@@ -373,7 +436,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/projects/projects.component.ts",
       "source_location": "L13",
       "id": "projects_component_projectscomponent_constructor",
-      "community": 9,
+      "community": 10,
       "norm_label": ".constructor()"
     },
     {
@@ -382,35 +445,35 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_resume_resume_component_ts",
-      "community": 4,
+      "community": 6,
       "norm_label": "resume.component.ts"
     },
     {
       "label": "ResumeComponent",
       "file_type": "code",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
-      "source_location": "L19",
+      "source_location": "L14",
       "id": "resume_component_resumecomponent",
-      "community": 4,
+      "community": 6,
       "norm_label": "resumecomponent"
-    },
-    {
-      "label": ".ngOnInit()",
-      "file_type": "code",
-      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
-      "source_location": "L22",
-      "id": "resume_component_resumecomponent_ngoninit",
-      "community": 4,
-      "norm_label": ".ngoninit()"
     },
     {
       "label": ".downloadResume()",
       "file_type": "code",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
-      "source_location": "L35",
+      "source_location": "L27",
       "id": "resume_component_resumecomponent_downloadresume",
-      "community": 4,
+      "community": 6,
       "norm_label": ".downloadresume()"
+    },
+    {
+      "label": ".toggleLeadForm()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
+      "source_location": "L34",
+      "id": "resume_component_resumecomponent_toggleleadform",
+      "community": 6,
+      "norm_label": ".toggleleadform()"
     },
     {
       "label": "marquee.component.ts",
@@ -418,7 +481,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/marquee/marquee.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_marquee_marquee_component_ts",
-      "community": 10,
+      "community": 11,
       "norm_label": "marquee.component.ts"
     },
     {
@@ -427,7 +490,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/marquee/marquee.component.ts",
       "source_location": "L12",
       "id": "marquee_component_marqueecomponent",
-      "community": 10,
+      "community": 11,
       "norm_label": "marqueecomponent"
     },
     {
@@ -436,7 +499,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/marquee/marquee.component.ts",
       "source_location": "L15",
       "id": "marquee_component_marqueecomponent_constructor",
-      "community": 10,
+      "community": 11,
       "norm_label": ".constructor()"
     },
     {
@@ -445,7 +508,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/projects-preview/projects-preview.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_projects_preview_projects_preview_component_ts",
-      "community": 5,
+      "community": 7,
       "norm_label": "projects-preview.component.ts"
     },
     {
@@ -454,7 +517,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/projects-preview/projects-preview.component.ts",
       "source_location": "L14",
       "id": "projects_preview_component_projectspreviewcomponent",
-      "community": 5,
+      "community": 7,
       "norm_label": "projectspreviewcomponent"
     },
     {
@@ -463,7 +526,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/projects-preview/projects-preview.component.ts",
       "source_location": "L16",
       "id": "projects_preview_component_projectspreviewcomponent_constructor",
-      "community": 5,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -472,7 +535,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/projects-preview/projects-preview.component.ts",
       "source_location": "L17",
       "id": "projects_preview_component_projectspreviewcomponent_formatindex",
-      "community": 5,
+      "community": 7,
       "norm_label": ".formatindex()"
     },
     {
@@ -481,7 +544,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_skills_skills_component_ts",
-      "community": 11,
+      "community": 12,
       "norm_label": "skills.component.ts"
     },
     {
@@ -490,7 +553,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
       "source_location": "L14",
       "id": "skills_component_skillscomponent",
-      "community": 11,
+      "community": 12,
       "norm_label": "skillscomponent"
     },
     {
@@ -499,7 +562,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/skills/skills.component.ts",
       "source_location": "L18",
       "id": "skills_component_skillscomponent_getcategoryicon",
-      "community": 11,
+      "community": 12,
       "norm_label": ".getcategoryicon()"
     },
     {
@@ -508,7 +571,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_hero_hero_component_ts",
-      "community": 2,
+      "community": 3,
       "norm_label": "hero.component.ts"
     },
     {
@@ -517,7 +580,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
       "source_location": "L13",
       "id": "hero_component_herocomponent",
-      "community": 2,
+      "community": 3,
       "norm_label": "herocomponent"
     },
     {
@@ -526,7 +589,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
       "source_location": "L23",
       "id": "hero_component_herocomponent_constructor",
-      "community": 2,
+      "community": 3,
       "norm_label": ".constructor()"
     },
     {
@@ -535,7 +598,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
       "source_location": "L27",
       "id": "hero_component_herocomponent_ngoninit",
-      "community": 2,
+      "community": 3,
       "norm_label": ".ngoninit()"
     },
     {
@@ -544,7 +607,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/hero/hero.component.ts",
       "source_location": "L31",
       "id": "hero_component_herocomponent_type",
-      "community": 2,
+      "community": 3,
       "norm_label": ".type()"
     },
     {
@@ -553,7 +616,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/timeline/timeline.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_timeline_timeline_component_ts",
-      "community": 12,
+      "community": 13,
       "norm_label": "timeline.component.ts"
     },
     {
@@ -562,7 +625,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/timeline/timeline.component.ts",
       "source_location": "L13",
       "id": "timeline_component_timelinecomponent",
-      "community": 12,
+      "community": 13,
       "norm_label": "timelinecomponent"
     },
     {
@@ -571,7 +634,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/timeline/timeline.component.ts",
       "source_location": "L14",
       "id": "timeline_component_timelinecomponent_constructor",
-      "community": 12,
+      "community": 13,
       "norm_label": ".constructor()"
     },
     {
@@ -580,7 +643,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/stats/stats.component.ts",
       "source_location": "L1",
       "id": "users_vivek_developer_angular_portfolio_src_app_features_stats_stats_component_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "stats.component.ts"
     },
     {
@@ -589,7 +652,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/stats/stats.component.ts",
       "source_location": "L13",
       "id": "stats_component_statscomponent",
-      "community": 0,
+      "community": 1,
       "norm_label": "statscomponent"
     },
     {
@@ -598,7 +661,7 @@
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/stats/stats.component.ts",
       "source_location": "L25",
       "id": "stats_component_statscomponent_constructor",
-      "community": 0,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
@@ -615,6 +678,51 @@
       "norm_label": "reveal directive"
     },
     {
+      "label": "lead-capture-form.component.ts",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_app_shared_components_lead_capture_form_lead_capture_form_component_ts",
+      "community": 0,
+      "norm_label": "lead-capture-form.component.ts"
+    },
+    {
+      "label": "LeadCaptureFormComponent",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L13",
+      "id": "lead_capture_form_component_leadcaptureformcomponent",
+      "community": 0,
+      "norm_label": "leadcaptureformcomponent"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L27",
+      "id": "lead_capture_form_component_leadcaptureformcomponent_constructor",
+      "community": 0,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".onSubmit()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L29",
+      "id": "lead_capture_form_component_leadcaptureformcomponent_onsubmit",
+      "community": 0,
+      "norm_label": ".onsubmit()"
+    },
+    {
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L43",
+      "id": "lead_capture_form_component_leadcaptureformcomponent_close",
+      "community": 0,
+      "norm_label": ".close()"
+    },
+    {
       "label": "Production Environment Config",
       "file_type": "code",
       "source_file": "src/environments/environment.prod.ts",
@@ -624,21 +732,17 @@
       "author": null,
       "contributor": null,
       "id": "environment_prod_ts_public_config",
-      "community": 16,
+      "community": 21,
       "norm_label": "production environment config"
     },
     {
-      "label": "Environment Config",
+      "label": "environment.ts",
       "file_type": "code",
-      "source_file": "src/environments/environment.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "environment_ts_public_config",
-      "community": 16,
-      "norm_label": "environment config"
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/environments/environment.ts",
+      "source_location": "L1",
+      "id": "users_vivek_developer_angular_portfolio_src_environments_environment_ts",
+      "community": 22,
+      "norm_label": "environment.ts"
     },
     {
       "label": "README Overview",
@@ -649,7 +753,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "readme overview",
       "id": "readme_overview"
     },
@@ -662,7 +766,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "personalisation checklist",
       "id": "readme_personalisation_checklist"
     },
@@ -675,7 +779,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "security note",
       "id": "readme_security_note"
     },
@@ -688,7 +792,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "scalability note",
       "id": "readme_scalability_note"
     },
@@ -701,7 +805,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 23,
       "norm_label": "resume placeholder pdf",
       "id": "resume_pdf_placeholder"
     },
@@ -714,7 +818,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 24,
       "norm_label": "project placeholder svg",
       "id": "project_placeholder_svg_art"
     },
@@ -727,7 +831,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "agents.md",
       "id": "agents_md"
     },
@@ -740,7 +844,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "graph report",
       "id": "graph_report_md"
     },
@@ -753,7 +857,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "graphify extraction instructions",
       "id": "graphify_instruction"
     }
@@ -786,6 +890,90 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "users_vivek_developer_angular_portfolio_src_app_core_services_lead_gate_service_ts",
+      "_tgt": "lead_gate_service_leadgateservice",
+      "source": "users_vivek_developer_angular_portfolio_src_app_core_services_lead_gate_service_ts",
+      "target": "lead_gate_service_leadgateservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_src": "lead_gate_service_leadgateservice",
+      "_tgt": "lead_gate_service_leadgateservice_isunlocked",
+      "source": "lead_gate_service_leadgateservice",
+      "target": "lead_gate_service_leadgateservice_isunlocked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "lead_gate_service_leadgateservice",
+      "_tgt": "lead_gate_service_leadgateservice_unlock",
+      "source": "lead_gate_service_leadgateservice",
+      "target": "lead_gate_service_leadgateservice_unlock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_src": "lead_gate_service_leadgateservice",
+      "_tgt": "lead_gate_service_leadgateservice_getinitialstate",
+      "source": "lead_gate_service_leadgateservice",
+      "target": "lead_gate_service_leadgateservice_getinitialstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_src": "lead_gate_service_leadgateservice",
+      "_tgt": "lead_gate_service_leadgateservice_submitlead",
+      "source": "lead_gate_service_leadgateservice",
+      "target": "lead_gate_service_leadgateservice_submitlead",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/lead-gate.service.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_src": "lead_gate_service_leadgateservice_submitlead",
+      "_tgt": "lead_gate_service_leadgateservice_unlock",
+      "source": "lead_gate_service_leadgateservice_unlock",
+      "target": "lead_gate_service_leadgateservice_submitlead",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_src": "lead_gate_service_leadgateservice_submitlead",
+      "_tgt": "lead_capture_form_component_leadcaptureformcomponent_onsubmit",
+      "source": "lead_gate_service_leadgateservice_submitlead",
+      "target": "lead_capture_form_component_leadcaptureformcomponent_onsubmit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
       "source_location": "L5",
       "weight": 1.0,
@@ -799,7 +987,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
-      "source_location": "L152",
+      "source_location": "L146",
       "weight": 1.0,
       "_src": "portfolio_data_service_portfoliodataservice",
       "_tgt": "portfolio_data_service_portfoliodataservice_getfeaturedprojects",
@@ -811,7 +999,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
-      "source_location": "L156",
+      "source_location": "L150",
       "weight": 1.0,
       "_src": "portfolio_data_service_portfoliodataservice",
       "_tgt": "portfolio_data_service_portfoliodataservice_getprojectsbycategory",
@@ -823,7 +1011,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/core/services/portfolio-data.service.ts",
-      "source_location": "L161",
+      "source_location": "L155",
       "weight": 1.0,
       "_src": "portfolio_data_service_portfoliodataservice",
       "_tgt": "portfolio_data_service_portfoliodataservice_getprofessionalstats",
@@ -931,7 +1119,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
-      "source_location": "L13",
+      "source_location": "L15",
       "weight": 1.0,
       "_src": "users_vivek_developer_angular_portfolio_src_app_features_contact_contact_component_ts",
       "_tgt": "contact_component_contactcomponent",
@@ -943,12 +1131,24 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
-      "source_location": "L14",
+      "source_location": "L20",
       "weight": 1.0,
       "_src": "contact_component_contactcomponent",
       "_tgt": "contact_component_contactcomponent_constructor",
       "source": "contact_component_contactcomponent",
       "target": "contact_component_contactcomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/contact/contact.component.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_src": "contact_component_contactcomponent",
+      "_tgt": "contact_component_contactcomponent_toggleleadform",
+      "source": "contact_component_contactcomponent",
+      "target": "contact_component_contactcomponent_toggleleadform",
       "confidence_score": 1.0
     },
     {
@@ -991,7 +1191,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
-      "source_location": "L19",
+      "source_location": "L14",
       "weight": 1.0,
       "_src": "users_vivek_developer_angular_portfolio_src_app_features_resume_resume_component_ts",
       "_tgt": "resume_component_resumecomponent",
@@ -1003,24 +1203,24 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
-      "source_location": "L22",
+      "source_location": "L27",
       "weight": 1.0,
       "_src": "resume_component_resumecomponent",
-      "_tgt": "resume_component_resumecomponent_ngoninit",
+      "_tgt": "resume_component_resumecomponent_downloadresume",
       "source": "resume_component_resumecomponent",
-      "target": "resume_component_resumecomponent_ngoninit",
+      "target": "resume_component_resumecomponent_downloadresume",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/features/resume/resume.component.ts",
-      "source_location": "L35",
+      "source_location": "L34",
       "weight": 1.0,
       "_src": "resume_component_resumecomponent",
-      "_tgt": "resume_component_resumecomponent_downloadresume",
+      "_tgt": "resume_component_resumecomponent_toggleleadform",
       "source": "resume_component_resumecomponent",
-      "target": "resume_component_resumecomponent_downloadresume",
+      "target": "resume_component_resumecomponent_toggleleadform",
       "confidence_score": 1.0
     },
     {
@@ -1216,16 +1416,52 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "graphify-out/graph.html",
-      "source_location": null,
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L13",
       "weight": 1.0,
-      "_src": "environment_prod_ts_public_config",
-      "_tgt": "environment_ts_public_config",
-      "source": "environment_prod_ts_public_config",
-      "target": "environment_ts_public_config"
+      "_src": "users_vivek_developer_angular_portfolio_src_app_shared_components_lead_capture_form_lead_capture_form_component_ts",
+      "_tgt": "lead_capture_form_component_leadcaptureformcomponent",
+      "source": "users_vivek_developer_angular_portfolio_src_app_shared_components_lead_capture_form_lead_capture_form_component_ts",
+      "target": "lead_capture_form_component_leadcaptureformcomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_src": "lead_capture_form_component_leadcaptureformcomponent",
+      "_tgt": "lead_capture_form_component_leadcaptureformcomponent_constructor",
+      "source": "lead_capture_form_component_leadcaptureformcomponent",
+      "target": "lead_capture_form_component_leadcaptureformcomponent_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "lead_capture_form_component_leadcaptureformcomponent",
+      "_tgt": "lead_capture_form_component_leadcaptureformcomponent_onsubmit",
+      "source": "lead_capture_form_component_leadcaptureformcomponent",
+      "target": "lead_capture_form_component_leadcaptureformcomponent_onsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/vivek/Developer/Angular/portfolio/src/app/shared/components/lead-capture-form/lead-capture-form.component.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_src": "lead_capture_form_component_leadcaptureformcomponent",
+      "_tgt": "lead_capture_form_component_leadcaptureformcomponent_close",
+      "source": "lead_capture_form_component_leadcaptureformcomponent",
+      "target": "lead_capture_form_component_leadcaptureformcomponent_close",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
