@@ -8,7 +8,7 @@
       <h1 class="resume-name">Vivek Kumar Biswal</h1>
       <div class="contact-info">
         <!-- Phone -->
-        <span class="contact-item">
+        <span class="contact-item" *ngIf="isUnlocked()">
           <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path
@@ -26,6 +26,12 @@
           </svg>
           {{ contactInfo.email }}
         </a>
+
+        <!-- Unlock Button -->
+        <button class="unlock-inline-btn" (click)="toggleLeadForm(true)" *ngIf="!isUnlocked()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          Unlock Phone Number
+        </button>
 
         <!-- LinkedIn -->
         <a class="contact-item" [href]="contactInfo.linkedin" target="_blank">
@@ -279,12 +285,23 @@
       </svg>
     </button>
     <a [href]="'mailto:' + contactInfo.email" class="fab fab--accent" title="Contact Me">
-      <!-- Email Icon SVG -->
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
         <polyline points="22,6 12,13 2,6"></polyline>
       </svg>
     </a>
+
+    <button *ngIf="!isUnlocked()" (click)="toggleLeadForm(true)" class="fab fab--accent" title="Unlock Phone Number">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+      </svg>
+    </button>
   </div>
-</div>
+
+  <app-lead-capture-form 
+    *ngIf="showLeadForm()" 
+    (onClose)="toggleLeadForm(false)"
+    (onSuccess)="toggleLeadForm(false)">
+  </app-lead-capture-form>
+  </div>

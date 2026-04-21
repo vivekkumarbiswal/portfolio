@@ -1,0 +1,55 @@
+<div class="modal-overlay" (click)="close()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="close()" [disabled]="isLoading()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+
+    <div class="modal-header">
+      <div class="lock-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+      </div>
+      <h2>Unlock Contact Info</h2>
+      <p>Please share a few details to view my contact information. I'll receive a notification and get back to you soon.</p>
+    </div>
+
+    <form (ngSubmit)="onSubmit()" #leadForm="ngForm" class="capture-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="model.name" required #name="ngModel" placeholder="John Doe">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Work Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="model.email" required email #email="ngModel" placeholder="john@company.com">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Your Phone Number</label>
+          <input type="tel" id="phone" name="phone" [(ngModel)]="model.phone" required #phone="ngModel" placeholder="+91 99999 99999">
+        </div>
+        
+        <div class="form-group">
+          <label for="purpose">Purpose</label>
+          <select id="purpose" name="purpose" [(ngModel)]="model.purpose">
+            <option value="Hiring">Hiring / Opportunity</option>
+            <option value="Collaboration">Collaboration</option>
+            <option value="Inquiry">General Inquiry</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div *ngIf="errorMsg()" class="error-banner">
+        {{ errorMsg() }}
+      </div>
+
+      <button type="submit" class="submit-btn" [disabled]="!leadForm.form.valid || isLoading()">
+        <span *ngIf="!isLoading()">Reveal Contact Details</span>
+        <span *ngIf="isLoading()" class="loader-inline"></span>
+      </button>
+      
+      <p class="privacy-note">Your details are sent directly to me and never shared with third parties.</p>
+    </form>
+  </div>
+</div>

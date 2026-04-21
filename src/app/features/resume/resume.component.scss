@@ -150,6 +150,28 @@ hr {
   }
 }
 
+.unlock-inline-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px dashed $color-border;
+  color: $color-link;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-color: $color-link;
+  }
+}
+
+
 .contact-item {
   display: inline-flex;
   align-items: center;

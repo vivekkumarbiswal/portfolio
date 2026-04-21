@@ -71,6 +71,22 @@
     z-index: 1;
   }
 
+  &.locked {
+    cursor: pointer;
+    
+    .card-icon {
+      border-style: dashed;
+    }
+    
+    &:hover {
+      .card-icon {
+        background: var(--text-muted);
+        color: var(--text-primary);
+        border-style: solid;
+      }
+    }
+  }
+
   &:hover {
     transform: translateY(-8px);
     background: var(--bg-card-hover);
@@ -89,6 +105,7 @@
     }
   }
 }
+
 
 .contact-footer {
   display: flex;
