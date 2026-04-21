@@ -66,29 +66,23 @@ export class PortfolioDataService {
 
   // ─── PROJECTS ────────────────────────────────────────────────────────
   readonly projects: Project[] = [
+    /*
     {
-      id: 'proj-01',
+      id: 'proj-db-spain',
       title: 'MyBank Spain',
-      description: 'Built scalable, accessible components for money transfer and transaction history using Angular v14+ and SCSS.',
-      longDescription: 'Part of the TCS Interactive team for Deutsche Bank. Focused on modular architecture and global design consistency.',
-      tech: ['Angular', 'RxJS', 'SCSS', 'TypeScript', 'Aria'],
+      description: 'Rebrand and UI modernization of Deutsche Bank’s mobile banking platform using Angular 13, Ionic, and Cordova.',
+      longDescription: 'Collaborated with the TCS Interactive team to deliver a high-performance, accessible banking experience. Key focus was on reusable UI components and global design consistency across web and mobile platforms.',
+      tech: ['Angular 13', 'Ionic', 'Cordova', 'TypeScript', 'WCAG 2.1'],
       category: 'fullstack',
       type: 'FinTech Application',
-      year: 2024,
+      year: 2025,
       status: 'live',
       featured: true,
-    },
-    {
-      id: 'proj-02',
-      title: 'EduTrack PWA',
-      description: 'A React-based Progressive Web App for student tracking with offline support and push notifications.',
-      tech: ['React', 'PWA', 'Firebase', 'Workbox', 'Chakra UI'],
-      category: 'frontend',
-      type: 'Education Platform',
-      year: 2023,
-      status: 'live',
-      featured: true,
+      github: 'https://github.com/vivekkumarbiswal',
+      demo: 'https://github.com/vivekkumarbiswal',
+      image: 'assets/images/project-placeholder.svg'
     }
+    */
   ];
 
   // ─── SKILLS ──────────────────────────────────────────────────────────
