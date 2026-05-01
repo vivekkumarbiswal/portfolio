@@ -25,8 +25,8 @@ export class StatsComponent {
   constructor(private data: PortfolioDataService) {
     this.stats = this.data.getProfessionalStats();
 
-    this.githubStatsUrl = `https://github-readme-stats.vercel.app/api?username=${this.ghUser}&show_icons=true&theme=${this.theme}&hide_border=true&bg_color=${this.bgColor}&title_color=${this.titleColor}&text_color=${this.textColor}&icon_color=${this.iconColor}`;
+    this.githubStatsUrl = `https://ghrs.vercel.app/api?username=${this.ghUser}&show_icons=true&theme=${this.theme}&hide_border=true&bg_color=${this.bgColor}&title_color=${this.titleColor}&text_color=${this.textColor}&icon_color=${this.iconColor}`;
 
-    this.githubLanguagesUrl = `https://github-readme-stats.vercel.app/api/top-langs/?username=${this.ghUser}&layout=compact&theme=${this.theme}&hide_border=true&bg_color=${this.bgColor}&title_color=${this.titleColor}&text_color=${this.textColor}`;
+    this.githubLanguagesUrl = `https://ghrs.vercel.app/api/top-langs/?username=${this.ghUser}&layout=compact&theme=${this.theme}&hide_border=true&bg_color=${this.bgColor}&title_color=${this.titleColor}&text_color=${this.textColor}`;
   }
 }
